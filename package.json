@@ -4,14 +4,12 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf dist",
-    "install:site": "cd site && npm install",
     "install:kb": "cd kb && npm install --ignore-scripts",
-    "install:all": "npm run install:site && npm run install:kb",
-    "build:site": "cd site && npx astro build",
+    "build:site": "pnpm --filter @hyrahmo/site run build",
     "build:kb": "cd kb && npx quartz build -o ../dist/kb",
     "build:merge": "node scripts/merge.mjs",
-    "build": "npm run clean && npm run install:all && npm run build:site && npm run build:kb && npm run build:merge",
-    "dev:site": "cd site && npx astro dev --port 4321",
+    "build": "npm run clean && npm run install:kb && npm run build:site && npm run build:kb && npm run build:merge",
+    "dev:site": "pnpm --filter @hyrahmo/site run dev",
     "dev:kb": "cd kb && npx quartz build --serve --port 8080",
     "preview": "npm run build && npx wrangler dev",
     "deploy": "npm run build && npx wrangler deploy"
