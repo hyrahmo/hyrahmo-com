@@ -53,7 +53,19 @@
       "Bash(ls /tmp/hyrahmo-old/quartz/components/Share*)",
       "Bash(rm -rf /c/Users/hyrahmo/Documents/hyrahmo_com/kb/content/*)",
       "Bash(cp -r /tmp/hyrahmo-old/content/* /c/Users/hyrahmo/Documents/hyrahmo_com/kb/content/)",
-      "Bash(node scripts/fill-content.mjs)"
+      "Bash(node scripts/fill-content.mjs)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiA.woff2\" -o inter-400.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fAZ9hiA.woff2\" -o inter-500.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZ9hiA.woff2\" -o inter-600.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYAZ9hiA.woff2\" -o inter-700.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2\" -o jbmono-400.woff2)",
+      "Bash(curl -sL -H \"User-Agent: Mozilla/5.0\" \"https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxjPVmUsaaDhw.woff2\" -o jbmono-400.woff2)",
+      "Bash(curl -sL -H \"User-Agent: Mozilla/5.0\" \"https://fonts.gstatic.com/s/jetbrainsmono/v20/tDbY2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKxTPVmUsaaDhw.woff2\" -o jbmono-500.woff2)",
+      "WebFetch(domain:fonts.google.com)",
+      "Bash(curl -sL -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap\")",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwhsk.woff2\" -o jbmono-400.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2\" -o jbmono-500.woff2)",
+      "Bash(ls -la jbmono*)"
     ],
     "additionalDirectories": [
       "\\tmp"
