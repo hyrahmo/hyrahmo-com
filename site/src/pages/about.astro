@@ -3,15 +3,15 @@ import Base from '../layouts/Base.astro';
 ---
 <Base title="About" description="About HYRAHMO — builder, thinker, systems person.">
   <section class="page">
-    <h1>About</h1>
-    <div class="content">
+    <h1 class="animate-in">About</h1>
+    <div class="content animate-in animate-in-delay-1">
       <p>
         I'm HYRAHMO. I build products, explore systems, and document what I learn along the way.
       </p>
       <p>
         This site is both a portfolio and a living knowledge base.
         The <a href="/">main site</a> is the polished side — projects, ideas, proof of work.
-        The <a href="/kb/">knowledge base</a> is the raw side — notes, connections, a digital garden.
+        The <a href="/kb/">notes</a> section is the raw side — connections, a digital garden.
       </p>
       <p>
         I believe in learning in public, building useful things, and keeping things simple.
@@ -28,7 +28,7 @@ import Base from '../layouts/Base.astro';
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -0.03em;
     margin-bottom: 2rem;
@@ -48,5 +48,10 @@ import Base from '../layouts/Base.astro';
     color: var(--color-accent);
     text-decoration: underline;
     text-underline-offset: 3px;
+  }
+
+  @media (max-width: 640px) {
+    .page { padding: 5rem 1rem 3rem; }
+    .content { font-size: 1rem; }
   }
 </style>

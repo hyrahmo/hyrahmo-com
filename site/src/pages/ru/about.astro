@@ -1,0 +1,26 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base title="Обо мне" lang="ru" description="HYRAHMO — строю, думаю, систематизирую.">
+  <section class="page">
+    <h1 class="animate-in">Обо мне</h1>
+    <div class="content animate-in animate-in-delay-1">
+      <p>Я HYRAHMO. Создаю продукты, исследую системы и документирую всё, что узнаю.</p>
+      <p>
+        Этот сайт — одновременно портфолио и живая база знаний.
+        <a href="/ru/">Главная</a> — отполированная сторона: проекты, идеи, результаты.
+        <a href="/kb/">Заметки</a> — сырая сторона: связи, цифровой сад.
+      </p>
+      <p>Верю в открытое обучение, полезные вещи и простоту.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page { max-width: 680px; margin: 0 auto; padding: 6rem 2rem 4rem; }
+  h1 { font-size: clamp(2rem, 5vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 2rem; }
+  .content { font-size: 1.1rem; line-height: 1.8; }
+  .content p { margin-bottom: 1.5rem; color: var(--color-text-muted); }
+  .content a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; }
+  @media (max-width: 640px) { .page { padding: 5rem 1rem 3rem; } .content { font-size: 1rem; } }
+</style>

@@ -1,8 +1,8 @@
 ---
-title: Knowledge Base
+title: Notes
 ---
 
-Welcome to the HYRAHMO knowledge base — a digital garden of notes, ideas, and connections.
+Welcome to my digital garden — notes, ideas, and connections.
 
 Browse topics using the explorer on the left, search for something specific, or explore the [[graph view|graph]].
 

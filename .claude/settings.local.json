@@ -34,7 +34,15 @@
       "Bash(git branch:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git subtree:*)"
+      "Bash(git subtree:*)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm approve-builds:*)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(node scripts/merge.mjs)",
+      "Bash(gh repo:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)",
+      "Bash(npm run:*)"
     ],
     "additionalDirectories": [
       "\\tmp"

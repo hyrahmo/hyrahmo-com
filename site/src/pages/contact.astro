@@ -3,13 +3,13 @@ import Base from '../layouts/Base.astro';
 ---
 <Base title="Contact" description="Get in touch with HYRAHMO.">
   <section class="page">
-    <h1>Contact</h1>
-    <div class="content">
+    <h1 class="animate-in">Contact</h1>
+    <div class="content animate-in animate-in-delay-1">
       <p>Want to collaborate, ask a question, or just say hi?</p>
       <div class="links">
-        <a href="mailto:dima@aetlas.pro" class="contact-link">
+        <a href="mailto:hello@hyrahmo.com" class="contact-link">
           <span class="label">Email</span>
-          <span class="value">dima@aetlas.pro</span>
+          <span class="value">hello@hyrahmo.com</span>
         </a>
         <a href="https://github.com/hyrahmo" class="contact-link">
           <span class="label">GitHub</span>
@@ -28,7 +28,7 @@ import Base from '../layouts/Base.astro';
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -0.03em;
     margin-bottom: 2rem;
@@ -54,12 +54,13 @@ import Base from '../layouts/Base.astro';
     background: var(--color-surface);
     border: 1px solid var(--color-border);
     border-radius: 12px;
-    transition: border-color var(--transition);
+    transition: border-color var(--transition), transform var(--transition);
   }
 
   .contact-link:hover {
     border-color: var(--color-text-muted);
     opacity: 1;
+    transform: translateY(-2px);
   }
 
   .label {
@@ -72,5 +73,10 @@ import Base from '../layouts/Base.astro';
   .value {
     font-size: 1rem;
     color: var(--color-accent);
+  }
+
+  @media (max-width: 640px) {
+    .page { padding: 5rem 1rem 3rem; }
+    .contact-link { padding: 1rem; gap: 1rem; }
   }
 </style>

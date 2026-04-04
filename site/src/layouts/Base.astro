@@ -2,33 +2,98 @@
 interface Props {
   title: string;
   description?: string;
+  lang?: string;
 }
 
-const { title, description = 'HYRAHMO — personal site & knowledge base' } = Astro.props;
+const { title, description = 'HYRAHMO — personal site & knowledge base', lang = 'en' } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/og-default.png', Astro.site);
+
+// i18n: compute alternate path
+const path = Astro.url.pathname;
+const isRu = lang === 'ru';
+const altLang = isRu ? 'en' : 'ru';
+const altPath = isRu ? path.replace(/^\/ru/, '') || '/' : `/ru${path === '/' ? '' : path}`;
+const altURL = new URL(altPath, Astro.site);
+const prefix = isRu ? '/ru' : '';
+const ogLocale = isRu ? 'ru_RU' : 'en_US';
 ---
 <!doctype html>
-<html lang="en">
+<html lang={lang} data-theme="dark">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content={description} />
+  <meta name="author" content="HYRAHMO" />
+  <meta name="generator" content={Astro.generator} />
+
+  <!-- Canonical & Alternate -->
   <link rel="canonical" href={canonicalURL.href} />
-  <link rel="icon" href="/favicon.ico" />
+  <link rel="alternate" hreflang={altLang} href={altURL.href} />
+  <link rel="alternate" hreflang={lang} href={canonicalURL.href} />
+  <link rel="alternate" hreflang="x-default" href={new URL(isRu ? altPath : path, Astro.site).href} />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonicalURL.href} />
+  <meta property="og:title" content={`${title} | HYRAHMO`} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage.href} />
+  <meta property="og:site_name" content="HYRAHMO" />
+  <meta property="og:locale" content={ogLocale} />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={`${title} | HYRAHMO`} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage.href} />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "HYRAHMO",
+    "url": "https://hyrahmo.com",
+    "description": description,
+    "inLanguage": [lang === 'ru' ? 'ru-RU' : 'en-US'],
+    "author": {
+      "@type": "Person",
+      "name": "HYRAHMO",
+      "url": "https://hyrahmo.com"
+    }
+  })} />
+
+  <!-- Theme: prevent flash -->
+  <script is:inline>
+    const theme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', theme);
+  </script>
+
   <title>{title} | HYRAHMO</title>
 </head>
 <body>
   <nav class="nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">HYRAHMO</a>
+      <a href={`${prefix}/`} class="nav-logo">HYRAHMO</a>
       <div class="nav-links">
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/kb/">Knowledge Base</a>
-        <a href="/contact">Contact</a>
+        <a href={`${prefix}/about`}>{isRu ? 'Обо мне' : 'About'}</a>
+        <a href={`${prefix}/projects`}>{isRu ? 'Проекты' : 'Projects'}</a>
+        <a href="/kb/">{isRu ? 'Заметки' : 'Notes'}</a>
+        <a href={`${prefix}/contact`}>{isRu ? 'Контакт' : 'Contact'}</a>
+        <a href={altPath} class="lang-switch" title={isRu ? 'English' : 'Русский'}>{isRu ? 'EN' : 'RU'}</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
       </div>
     </div>
   </nav>
@@ -40,9 +105,19 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <footer class="footer">
     <div class="footer-inner">
       <span>&copy; {new Date().getFullYear()} HYRAHMO</span>
-      <a href="/kb/">Knowledge Base</a>
+      <a href="/kb/">{isRu ? 'Заметки' : 'Notes'}</a>
     </div>
   </footer>
+
+  <script is:inline>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
 </body>
 </html>
 
@@ -59,7 +134,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     z-index: 100;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    background: rgba(10, 10, 10, 0.8);
+    background: var(--color-bg-alpha);
     border-bottom: 1px solid var(--color-border);
   }
 
@@ -80,7 +155,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
   .nav-links {
     display: flex;
-    gap: 2rem;
+    align-items: center;
+    gap: 1.5rem;
     font-size: 0.9rem;
   }
 
@@ -93,6 +169,46 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     color: var(--color-accent);
     opacity: 1;
   }
+
+  .lang-switch {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    color: var(--color-text-muted) !important;
+    transition: all var(--transition);
+  }
+
+  .lang-switch:hover {
+    color: var(--color-accent) !important;
+    border-color: var(--color-text-muted);
+    opacity: 1 !important;
+  }
+
+  .theme-toggle {
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 0.4rem;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition);
+  }
+
+  .theme-toggle:hover {
+    color: var(--color-accent);
+    border-color: var(--color-text-muted);
+  }
+
+  [data-theme="dark"] .icon-sun { display: block; }
+  [data-theme="dark"] .icon-moon { display: none; }
+  [data-theme="light"] .icon-sun { display: none; }
+  [data-theme="light"] .icon-moon { display: block; }
 
   main {
     padding-top: 4rem;
@@ -111,5 +227,19 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     justify-content: space-between;
     font-size: 0.85rem;
     color: var(--color-text-muted);
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .nav-inner {
+      padding: 0.75rem 1rem;
+    }
+    .nav-links {
+      gap: 1rem;
+      font-size: 0.8rem;
+    }
+    .footer-inner {
+      padding: 1.5rem 1rem;
+    }
   }
 </style>

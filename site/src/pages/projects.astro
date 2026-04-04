@@ -3,11 +3,11 @@ import Base from '../layouts/Base.astro';
 ---
 <Base title="Projects" description="Projects by HYRAHMO — things I've built.">
   <section class="page">
-    <h1>Projects</h1>
-    <p class="subtitle">Things I've built and worked on.</p>
+    <h1 class="animate-in">Projects</h1>
+    <p class="subtitle animate-in animate-in-delay-1">Things I've built and worked on.</p>
 
     <div class="projects">
-      <article class="project">
+      <article class="project animate-in animate-in-delay-2">
         <div class="project-header">
           <h2>hyrahmo.com</h2>
           <span class="tag">This site</span>
@@ -15,7 +15,7 @@ import Base from '../layouts/Base.astro';
         <p>Personal site and knowledge base. Astro + Quartz on Cloudflare Workers.</p>
       </article>
 
-      <article class="project">
+      <article class="project animate-in animate-in-delay-3">
         <div class="project-header">
           <h2>More coming soon</h2>
           <span class="tag">WIP</span>
@@ -34,7 +34,7 @@ import Base from '../layouts/Base.astro';
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 2.5rem);
     font-weight: 700;
     letter-spacing: -0.03em;
     margin-bottom: 0.5rem;
@@ -57,11 +57,12 @@ import Base from '../layouts/Base.astro';
     border: 1px solid var(--color-border);
     border-radius: 12px;
     padding: 1.5rem 2rem;
-    transition: border-color var(--transition);
+    transition: border-color var(--transition), transform var(--transition);
   }
 
   .project:hover {
     border-color: var(--color-text-muted);
+    transform: translateY(-2px);
   }
 
   .project-header {
@@ -88,5 +89,10 @@ import Base from '../layouts/Base.astro';
   .project p {
     color: var(--color-text-muted);
     font-size: 0.95rem;
+  }
+
+  @media (max-width: 640px) {
+    .page { padding: 5rem 1rem 3rem; }
+    .project { padding: 1.25rem; }
   }
 </style>

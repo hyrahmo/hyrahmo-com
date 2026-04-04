@@ -1,0 +1,65 @@
+---
+import Base from '../../layouts/Base.astro';
+import { t } from '../../i18n';
+const lang = 'ru';
+---
+<Base title="Главная" lang="ru" description="HYRAHMO — персональный сайт и база знаний">
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag animate-in">{t(lang, 'hero.tag')}</p>
+      <h1 class="hero-title animate-in animate-in-delay-1">
+        <span class="hero-line">{t(lang, 'hero.line1')}</span>
+        <span class="hero-line">{t(lang, 'hero.line2')}</span>
+      </h1>
+      <p class="hero-desc animate-in animate-in-delay-2">{t(lang, 'hero.desc')}</p>
+      <div class="hero-actions animate-in animate-in-delay-3">
+        <a href="/ru/projects" class="btn btn-primary">{t(lang, 'hero.projects')}</a>
+        <a href="/kb/" class="btn btn-ghost">{t(lang, 'hero.notes')} &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title animate-in">{t(lang, 'section.what')}</h2>
+      <div class="grid">
+        <div class="card animate-in animate-in-delay-1">
+          <h3>{t(lang, 'card.build')}</h3>
+          <p>{t(lang, 'card.build.desc')}</p>
+        </div>
+        <div class="card animate-in animate-in-delay-2">
+          <h3>{t(lang, 'card.learn')}</h3>
+          <p>{t(lang, 'card.learn.desc')}</p>
+        </div>
+        <div class="card animate-in animate-in-delay-3">
+          <h3>{t(lang, 'card.share')}</h3>
+          <p>{t(lang, 'card.share.desc')}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { min-height: 80vh; display: flex; align-items: center; }
+  .hero-inner { max-width: var(--max-width); margin: 0 auto; padding: 4rem 2rem; }
+  .hero-tag { font-family: var(--font-mono); font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 1.5rem; }
+  .hero-title { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
+  .hero-line { display: block; }
+  .hero-desc { font-size: clamp(1rem, 2vw, 1.2rem); color: var(--color-text-muted); max-width: 500px; margin-bottom: 2.5rem; }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; padding: 0.75rem 1.5rem; border-radius: 8px; font-size: 0.95rem; font-weight: 500; transition: all var(--transition); }
+  .btn-primary { background: var(--color-accent); color: var(--color-bg); }
+  .btn-primary:hover { opacity: 0.9; transform: translateY(-2px); }
+  .btn-ghost { border: 1px solid var(--color-border); color: var(--color-text); }
+  .btn-ghost:hover { border-color: var(--color-text-muted); opacity: 1; transform: translateY(-2px); }
+  .section { padding: 4rem 0; }
+  .section-inner { max-width: var(--max-width); margin: 0 auto; padding: 0 2rem; }
+  .section-title { font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 600; letter-spacing: -0.02em; margin-bottom: 2rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+  .card { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 2rem; transition: border-color var(--transition), transform var(--transition); }
+  .card:hover { border-color: var(--color-text-muted); transform: translateY(-4px); }
+  .card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
+  .card p { color: var(--color-text-muted); font-size: 0.95rem; }
+  @media (max-width: 640px) { .hero-inner { padding: 3rem 1rem; } .section-inner { padding: 0 1rem; } .hero { min-height: 70vh; } }
+</style>
