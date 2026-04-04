@@ -7,9 +7,9 @@ interface Props {
 
 const { title, description = 'HYRAHMO — personal site & knowledge base', lang = 'en' } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImage = new URL('/og-default.png', Astro.site);
+const ogImage = new URL('/og.png', Astro.site);
 
-// i18n: compute alternate path
+// i18n
 const path = Astro.url.pathname;
 const isRu = lang === 'ru';
 const altLang = isRu ? 'en' : 'ru';
@@ -26,6 +26,7 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
   <meta name="description" content={description} />
   <meta name="author" content="HYRAHMO" />
   <meta name="generator" content={Astro.generator} />
+  <meta name="theme-color" content="#0a0a0a" />
 
   <!-- Canonical & Alternate -->
   <link rel="canonical" href={canonicalURL.href} />
@@ -39,6 +40,8 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
   <meta property="og:title" content={`${title} | HYRAHMO`} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={ogImage.href} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:site_name" content="HYRAHMO" />
   <meta property="og:locale" content={ogLocale} />
 
@@ -48,9 +51,12 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={ogImage.href} />
 
-  <!-- Favicon -->
+  <!-- Favicon: all sizes -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -74,8 +80,9 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
 
   <!-- Theme: prevent flash -->
   <script is:inline>
-    const theme = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', theme);
+    const t = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', t);
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', t === 'dark' ? '#0a0a0a' : '#fafafa');
   </script>
 
   <title>{title} | HYRAHMO</title>
@@ -84,17 +91,40 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
   <nav class="nav">
     <div class="nav-inner">
       <a href={`${prefix}/`} class="nav-logo">HYRAHMO</a>
-      <div class="nav-links">
+
+      <!-- Desktop nav -->
+      <div class="nav-links desktop-only">
         <a href={`${prefix}/about`}>{isRu ? 'Обо мне' : 'About'}</a>
         <a href={`${prefix}/projects`}>{isRu ? 'Проекты' : 'Projects'}</a>
         <a href="/kb/">{isRu ? 'Заметки' : 'Notes'}</a>
         <a href={`${prefix}/contact`}>{isRu ? 'Контакт' : 'Contact'}</a>
-        <a href={altPath} class="lang-switch" title={isRu ? 'English' : 'Русский'}>{isRu ? 'EN' : 'RU'}</a>
-        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <a href={altPath} class="lang-switch">{isRu ? 'EN' : 'RU'}</a>
+        <button class="theme-toggle" id="theme-toggle-desktop" aria-label="Toggle theme">
           <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
       </div>
+
+      <!-- Mobile controls -->
+      <div class="mobile-controls mobile-only">
+        <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="burger" id="burger" aria-label="Menu">
+          <svg class="burger-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          <svg class="burger-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu mobile-only" id="mobile-menu">
+      <a href={`${prefix}/about`}>{isRu ? 'Обо мне' : 'About'}</a>
+      <a href={`${prefix}/projects`}>{isRu ? 'Проекты' : 'Projects'}</a>
+      <a href="/kb/">{isRu ? 'Заметки' : 'Notes'}</a>
+      <a href={`${prefix}/contact`}>{isRu ? 'Контакт' : 'Contact'}</a>
+      <a href={altPath} class="lang-switch">{isRu ? 'EN' : 'RU'}</a>
     </div>
   </nav>
 
@@ -110,12 +140,32 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
   </footer>
 
   <script is:inline>
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
+    // Theme toggle
+    function toggleTheme() {
+      const cur = document.documentElement.getAttribute('data-theme');
+      const next = cur === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'dark' ? '#0a0a0a' : '#fafafa');
+    }
+    document.getElementById('theme-toggle-desktop')?.addEventListener('click', toggleTheme);
+    document.getElementById('theme-toggle-mobile')?.addEventListener('click', toggleTheme);
+
+    // Burger menu
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('mobile-menu');
+    burger?.addEventListener('click', () => {
+      const open = menu.classList.toggle('is-open');
+      burger.classList.toggle('is-open', open);
+      document.body.style.overflow = open ? 'hidden' : '';
+    });
+    // Close on link click
+    menu?.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        menu.classList.remove('is-open');
+        burger.classList.remove('is-open');
+        document.body.style.overflow = '';
+      });
     });
   </script>
 </body>
@@ -141,7 +191,7 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
   .nav-inner {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.875rem 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -151,8 +201,10 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
     font-weight: 700;
     font-size: 1.1rem;
     letter-spacing: 0.05em;
+    flex-shrink: 0;
   }
 
+  /* Desktop nav */
   .nav-links {
     display: flex;
     align-items: center;
@@ -174,7 +226,7 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
     font-family: var(--font-mono);
     font-size: 0.75rem;
     font-weight: 500;
-    padding: 0.25rem 0.5rem;
+    padding: 0.2rem 0.45rem;
     border: 1px solid var(--color-border);
     border-radius: 4px;
     color: var(--color-text-muted) !important;
@@ -191,13 +243,14 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
     background: none;
     border: 1px solid var(--color-border);
     border-radius: 8px;
-    padding: 0.4rem;
+    padding: 0.35rem;
     cursor: pointer;
     color: var(--color-text-muted);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all var(--transition);
+    flex-shrink: 0;
   }
 
   .theme-toggle:hover {
@@ -210,8 +263,76 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
   [data-theme="light"] .icon-sun { display: none; }
   [data-theme="light"] .icon-moon { display: block; }
 
+  /* Burger button */
+  .burger {
+    background: none;
+    border: none;
+    color: var(--color-text);
+    cursor: pointer;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .burger .burger-close { display: none; }
+  .burger.is-open .burger-open { display: none; }
+  .burger.is-open .burger-close { display: block; }
+
+  .mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  /* Mobile menu */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: 1rem 1.5rem 1.5rem;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-bg);
+  }
+
+  .mobile-menu.is-open {
+    display: flex;
+  }
+
+  .mobile-menu a {
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    border-bottom: 1px solid var(--color-border);
+    transition: color var(--transition);
+  }
+
+  .mobile-menu a:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu a:hover {
+    color: var(--color-accent);
+    opacity: 1;
+  }
+
+  .mobile-menu .lang-switch {
+    display: inline-block;
+    width: fit-content;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  /* Show/hide by breakpoint */
+  .mobile-only { display: none; }
+  .desktop-only { display: flex; }
+
+  @media (max-width: 768px) {
+    .mobile-only { display: flex; }
+    .desktop-only { display: none !important; }
+  }
+
   main {
-    padding-top: 4rem;
+    padding-top: 3.5rem;
   }
 
   .footer {
@@ -222,24 +343,10 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
   .footer-inner {
     max-width: var(--max-width);
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     display: flex;
     justify-content: space-between;
     font-size: 0.85rem;
     color: var(--color-text-muted);
-  }
-
-  /* Mobile */
-  @media (max-width: 640px) {
-    .nav-inner {
-      padding: 0.75rem 1rem;
-    }
-    .nav-links {
-      gap: 1rem;
-      font-size: 0.8rem;
-    }
-    .footer-inner {
-      padding: 1.5rem 1rem;
-    }
   }
 </style>

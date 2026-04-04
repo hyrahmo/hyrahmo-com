@@ -42,7 +42,8 @@
       "Bash(gh repo:*)",
       "Bash(git remote:*)",
       "Bash(git push:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(node scripts/gen-icons.mjs)"
     ],
     "additionalDirectories": [
       "\\tmp"
