@@ -44,7 +44,13 @@
       "Bash(git push:*)",
       "Bash(npm run:*)",
       "Bash(node scripts/gen-icons.mjs)",
-      "Bash(ls -la /c/Users/hyrahmo/Documents/hyrahmo_com/dist/sitemap*)"
+      "Bash(ls -la /c/Users/hyrahmo/Documents/hyrahmo_com/dist/sitemap*)",
+      "Bash(find C:/Users/hyrahmo/Documents/hyrahmo_com/kb/quartz -name *[Ff]avicon* -o -name *[Ii]con*)",
+      "Bash(find C:/Users/hyrahmo/Documents/hyrahmo_com -type f \\\\\\(-name *.astro -o -name *.tsx -o -name *.ts \\\\\\))",
+      "Bash(node -e \":*)",
+      "Bash(git clone:*)",
+      "Bash(ls /c/Users/hyrahmo/Documents/hyrahmo_com/kb/quartz/components/Share*)",
+      "Bash(ls /tmp/hyrahmo-old/quartz/components/Share*)"
     ],
     "additionalDirectories": [
       "\\tmp"
