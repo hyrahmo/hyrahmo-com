@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "CS2"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "en"
-description: "Translation stub for index"
-tags: [en, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: en
+description: "Tactics, utility, economy"
+tags: [en]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/strategy/cs2/index|Русский]]** • 🇨🇳 **[[zh/strategy/cs2/index|中文]]** • 🇪🇸 **[[es/strategy/cs2/index|Español]]** • 🇸🇦 **[[ar/strategy/cs2/index|العربية]]** • 🇫🇷 **[[fr/strategy/cs2/index|Français]]** • 🇩🇪 **[[de/strategy/cs2/index|Deutsch]]** • 🇧🇷 **[[pt/strategy/cs2/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[ru/strategy/cs2/index|Русский]]** · **[[zh/strategy/cs2/index|中文]]** · **[[es/strategy/cs2/index|Español]]** · **[[de/strategy/cs2/index|Deutsch]]** · **[[fr/strategy/cs2/index|Français]]** · **[[pt/strategy/cs2/index|Português]]** · **[[ar/strategy/cs2/index|العربية]]**
 
----
+# CS2
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to English)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Tactics, utility, economy.

@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "学习方法"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "zh"
-description: "Translation stub for index"
-tags: [zh, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: zh
+description: "间隔重复、Zettelkasten、方法论"
+tags: [zh]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/meta/learning/index|Русский]]** • 🇺🇸 **[[en/meta/learning/index|English]]** • 🇪🇸 **[[es/meta/learning/index|Español]]** • 🇸🇦 **[[ar/meta/learning/index|العربية]]** • 🇫🇷 **[[fr/meta/learning/index|Français]]** • 🇩🇪 **[[de/meta/learning/index|Deutsch]]** • 🇧🇷 **[[pt/meta/learning/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/meta/learning/index|English]]** · **[[ru/meta/learning/index|Русский]]** · **[[es/meta/learning/index|Español]]** · **[[de/meta/learning/index|Deutsch]]** · **[[fr/meta/learning/index|Français]]** · **[[pt/meta/learning/index|Português]]** · **[[ar/meta/learning/index|العربية]]**
 
----
+# 学习方法
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Chinese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+间隔重复、Zettelkasten、方法论.

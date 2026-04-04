@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Software"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "en"
-description: "Translation stub for index"
-tags: [en, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: en
+description: "Backend, systems, architecture"
+tags: [en]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/engineering/software/index|Русский]]** • 🇨🇳 **[[zh/engineering/software/index|中文]]** • 🇪🇸 **[[es/engineering/software/index|Español]]** • 🇸🇦 **[[ar/engineering/software/index|العربية]]** • 🇫🇷 **[[fr/engineering/software/index|Français]]** • 🇩🇪 **[[de/engineering/software/index|Deutsch]]** • 🇧🇷 **[[pt/engineering/software/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[ru/engineering/software/index|Русский]]** · **[[zh/engineering/software/index|中文]]** · **[[es/engineering/software/index|Español]]** · **[[de/engineering/software/index|Deutsch]]** · **[[fr/engineering/software/index|Français]]** · **[[pt/engineering/software/index|Português]]** · **[[ar/engineering/software/index|العربية]]**
 
----
+# Software
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to English)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Backend, systems, architecture.

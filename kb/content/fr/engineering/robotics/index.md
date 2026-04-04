@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Robotique"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "fr"
-description: "Translation stub for index"
-tags: [fr, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: fr
+description: "Matériel, électronique, mécatronique"
+tags: [fr]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/engineering/robotics/index|Русский]]** • 🇺🇸 **[[en/engineering/robotics/index|English]]** • 🇨🇳 **[[zh/engineering/robotics/index|中文]]** • 🇪🇸 **[[es/engineering/robotics/index|Español]]** • 🇸🇦 **[[ar/engineering/robotics/index|العربية]]** • 🇩🇪 **[[de/engineering/robotics/index|Deutsch]]** • 🇧🇷 **[[pt/engineering/robotics/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/engineering/robotics/index|English]]** · **[[ru/engineering/robotics/index|Русский]]** · **[[zh/engineering/robotics/index|中文]]** · **[[es/engineering/robotics/index|Español]]** · **[[de/engineering/robotics/index|Deutsch]]** · **[[pt/engineering/robotics/index|Português]]** · **[[ar/engineering/robotics/index|العربية]]**
 
----
+# Robotique
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to French)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Matériel, électronique, mécatronique.

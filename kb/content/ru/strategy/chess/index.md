@@ -1,31 +1,16 @@
 ---
-title: index
+title: "Шахматы"
 date: 2025-12-21
-lastmod: 2025-12-21
+lastmod: 2026-04-04
 lang: ru
-description: Description for index
-tags:
-  - ru
-  - topic
-aliases: []
+description: "Дебюты, стратегия, эндшпили"
+tags: [ru]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇺🇸 **[[en/strategy/chess/index|English]]** • 🇨🇳 **[[zh/strategy/chess/index|中文]]** • 🇪🇸 **[[es/strategy/chess/index|Español]]** • 🇸🇦 **[[ar/strategy/chess/index|العربية]]** • 🇫🇷 **[[fr/strategy/chess/index|Français]]** • 🇩🇪 **[[de/strategy/chess/index|Deutsch]]** • 🇧🇷 **[[pt/strategy/chess/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/strategy/chess/index|English]]** · **[[zh/strategy/chess/index|中文]]** · **[[es/strategy/chess/index|Español]]** · **[[de/strategy/chess/index|Deutsch]]** · **[[fr/strategy/chess/index|Français]]** · **[[pt/strategy/chess/index|Português]]** · **[[ar/strategy/chess/index|العربية]]**
 
----
+# Шахматы
 
-# index
-
-
-
----
-
-> [!abstract] 📬 Контакты
-> - **Telegram**: [ @hyrahmo ](https://t.me/hyrahmo)
-> - **GitHub**: [ hyrahmo ](https://github.com/hyrahmo)
-> - **Habr**: [ Профиль ](https://habr.com/users/hyrahmo)
-> - **Email**: [ Написать ](mailto:contact@hyrahmo.com)
+Дебюты, стратегия, эндшпили.

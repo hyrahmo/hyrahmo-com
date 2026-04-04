@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Quant"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "de"
-description: "Translation stub for index"
-tags: [de, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: de
+description: "Algo-Trading, HFT, Marktmodelle"
+tags: [de]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/finance/quant/index|Русский]]** • 🇺🇸 **[[en/finance/quant/index|English]]** • 🇨🇳 **[[zh/finance/quant/index|中文]]** • 🇪🇸 **[[es/finance/quant/index|Español]]** • 🇸🇦 **[[ar/finance/quant/index|العربية]]** • 🇫🇷 **[[fr/finance/quant/index|Français]]** • 🇧🇷 **[[pt/finance/quant/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/quant/index|English]]** · **[[ru/finance/quant/index|Русский]]** · **[[zh/finance/quant/index|中文]]** · **[[es/finance/quant/index|Español]]** · **[[fr/finance/quant/index|Français]]** · **[[pt/finance/quant/index|Português]]** · **[[ar/finance/quant/index|العربية]]**
 
----
+# Quant
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to German)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Algo-Trading, HFT, Marktmodelle.

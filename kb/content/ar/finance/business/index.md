@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "الأعمال"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "ar"
-description: "Translation stub for index"
-tags: [ar, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: ar
+description: "المنتجات الرقمية، النمو، تحقيق الدخل"
+tags: [ar]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/finance/business/index|Русский]]** • 🇺🇸 **[[en/finance/business/index|English]]** • 🇨🇳 **[[zh/finance/business/index|中文]]** • 🇪🇸 **[[es/finance/business/index|Español]]** • 🇫🇷 **[[fr/finance/business/index|Français]]** • 🇩🇪 **[[de/finance/business/index|Deutsch]]** • 🇧🇷 **[[pt/finance/business/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/business/index|English]]** · **[[ru/finance/business/index|Русский]]** · **[[zh/finance/business/index|中文]]** · **[[es/finance/business/index|Español]]** · **[[de/finance/business/index|Deutsch]]** · **[[fr/finance/business/index|Français]]** · **[[pt/finance/business/index|Português]]**
 
----
+# الأعمال
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Arabic)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+المنتجات الرقمية، النمو، تحقيق الدخل.

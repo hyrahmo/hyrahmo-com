@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "量化金融"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "zh"
-description: "Translation stub for index"
-tags: [zh, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: zh
+description: "算法交易、高频交易、市场模型"
+tags: [zh]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/finance/quant/index|Русский]]** • 🇺🇸 **[[en/finance/quant/index|English]]** • 🇪🇸 **[[es/finance/quant/index|Español]]** • 🇸🇦 **[[ar/finance/quant/index|العربية]]** • 🇫🇷 **[[fr/finance/quant/index|Français]]** • 🇩🇪 **[[de/finance/quant/index|Deutsch]]** • 🇧🇷 **[[pt/finance/quant/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/quant/index|English]]** · **[[ru/finance/quant/index|Русский]]** · **[[es/finance/quant/index|Español]]** · **[[de/finance/quant/index|Deutsch]]** · **[[fr/finance/quant/index|Français]]** · **[[pt/finance/quant/index|Português]]** · **[[ar/finance/quant/index|العربية]]**
 
----
+# 量化金融
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Chinese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+算法交易、高频交易、市场模型.

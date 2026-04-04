@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Pôquer"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "pt"
-description: "Translation stub for index"
-tags: [pt, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: pt
+description: "GTO, ranges, gestão de risco"
+tags: [pt]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/strategy/poker/index|Русский]]** • 🇺🇸 **[[en/strategy/poker/index|English]]** • 🇨🇳 **[[zh/strategy/poker/index|中文]]** • 🇪🇸 **[[es/strategy/poker/index|Español]]** • 🇸🇦 **[[ar/strategy/poker/index|العربية]]** • 🇫🇷 **[[fr/strategy/poker/index|Français]]** • 🇩🇪 **[[de/strategy/poker/index|Deutsch]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/strategy/poker/index|English]]** · **[[ru/strategy/poker/index|Русский]]** · **[[zh/strategy/poker/index|中文]]** · **[[es/strategy/poker/index|Español]]** · **[[de/strategy/poker/index|Deutsch]]** · **[[fr/strategy/poker/index|Français]]** · **[[ar/strategy/poker/index|العربية]]**
 
----
+# Pôquer
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Portuguese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+GTO, ranges, gestão de risco.

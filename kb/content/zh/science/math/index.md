@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "数学"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "zh"
-description: "Translation stub for index"
-tags: [zh, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: zh
+description: "线性代数、统计学、概率论"
+tags: [zh]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/science/math/index|Русский]]** • 🇺🇸 **[[en/science/math/index|English]]** • 🇪🇸 **[[es/science/math/index|Español]]** • 🇸🇦 **[[ar/science/math/index|العربية]]** • 🇫🇷 **[[fr/science/math/index|Français]]** • 🇩🇪 **[[de/science/math/index|Deutsch]]** • 🇧🇷 **[[pt/science/math/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/science/math/index|English]]** · **[[ru/science/math/index|Русский]]** · **[[es/science/math/index|Español]]** · **[[de/science/math/index|Deutsch]]** · **[[fr/science/math/index|Français]]** · **[[pt/science/math/index|Português]]** · **[[ar/science/math/index|العربية]]**
 
----
+# 数学
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Chinese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+线性代数、统计学、概率论.

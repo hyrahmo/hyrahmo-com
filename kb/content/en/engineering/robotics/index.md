@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Robotics"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "en"
-description: "Translation stub for index"
-tags: [en, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: en
+description: "Hardware, electronics, mechatronics"
+tags: [en]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/engineering/robotics/index|Русский]]** • 🇨🇳 **[[zh/engineering/robotics/index|中文]]** • 🇪🇸 **[[es/engineering/robotics/index|Español]]** • 🇸🇦 **[[ar/engineering/robotics/index|العربية]]** • 🇫🇷 **[[fr/engineering/robotics/index|Français]]** • 🇩🇪 **[[de/engineering/robotics/index|Deutsch]]** • 🇧🇷 **[[pt/engineering/robotics/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[ru/engineering/robotics/index|Русский]]** · **[[zh/engineering/robotics/index|中文]]** · **[[es/engineering/robotics/index|Español]]** · **[[de/engineering/robotics/index|Deutsch]]** · **[[fr/engineering/robotics/index|Français]]** · **[[pt/engineering/robotics/index|Português]]** · **[[ar/engineering/robotics/index|العربية]]**
 
----
+# Robotics
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to English)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Hardware, electronics, mechatronics.

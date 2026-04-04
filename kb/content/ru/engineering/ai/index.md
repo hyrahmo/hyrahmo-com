@@ -1,31 +1,16 @@
 ---
-title: index
+title: "ИИ"
 date: 2025-12-21
-lastmod: 2025-12-21
+lastmod: 2026-04-04
 lang: ru
-description: Description for index
-tags:
-  - ru
-  - topic
-aliases: []
+description: "LLM, агенты, компьютерное зрение"
+tags: [ru]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇺🇸 **[[en/engineering/ai/index|English]]** • 🇨🇳 **[[zh/engineering/ai/index|中文]]** • 🇪🇸 **[[es/engineering/ai/index|Español]]** • 🇸🇦 **[[ar/engineering/ai/index|العربية]]** • 🇫🇷 **[[fr/engineering/ai/index|Français]]** • 🇩🇪 **[[de/engineering/ai/index|Deutsch]]** • 🇧🇷 **[[pt/engineering/ai/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/engineering/ai/index|English]]** · **[[zh/engineering/ai/index|中文]]** · **[[es/engineering/ai/index|Español]]** · **[[de/engineering/ai/index|Deutsch]]** · **[[fr/engineering/ai/index|Français]]** · **[[pt/engineering/ai/index|Português]]** · **[[ar/engineering/ai/index|العربية]]**
 
----
+# ИИ
 
-# index
-
-
-
----
-
-> [!abstract] 📬 Контакты
-> - **Telegram**: [ @hyrahmo ](https://t.me/hyrahmo)
-> - **GitHub**: [ hyrahmo ](https://github.com/hyrahmo)
-> - **Habr**: [ Профиль ](https://habr.com/users/hyrahmo)
-> - **Email**: [ Написать ](mailto:contact@hyrahmo.com)
+LLM, агенты, компьютерное зрение.

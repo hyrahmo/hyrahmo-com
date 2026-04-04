@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "الفيزياء"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "ar"
-description: "Translation stub for index"
-tags: [ar, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: ar
+description: "ميكانيكا الكم، الديناميكا الحرارية"
+tags: [ar]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/science/physics/index|Русский]]** • 🇺🇸 **[[en/science/physics/index|English]]** • 🇨🇳 **[[zh/science/physics/index|中文]]** • 🇪🇸 **[[es/science/physics/index|Español]]** • 🇫🇷 **[[fr/science/physics/index|Français]]** • 🇩🇪 **[[de/science/physics/index|Deutsch]]** • 🇧🇷 **[[pt/science/physics/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/science/physics/index|English]]** · **[[ru/science/physics/index|Русский]]** · **[[zh/science/physics/index|中文]]** · **[[es/science/physics/index|Español]]** · **[[de/science/physics/index|Deutsch]]** · **[[fr/science/physics/index|Français]]** · **[[pt/science/physics/index|Português]]**
 
----
+# الفيزياء
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Arabic)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+ميكانيكا الكم، الديناميكا الحرارية.

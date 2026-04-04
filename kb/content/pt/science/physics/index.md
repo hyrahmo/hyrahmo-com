@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Física"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "pt"
-description: "Translation stub for index"
-tags: [pt, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: pt
+description: "Mecânica quântica, termodinâmica"
+tags: [pt]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/science/physics/index|Русский]]** • 🇺🇸 **[[en/science/physics/index|English]]** • 🇨🇳 **[[zh/science/physics/index|中文]]** • 🇪🇸 **[[es/science/physics/index|Español]]** • 🇸🇦 **[[ar/science/physics/index|العربية]]** • 🇫🇷 **[[fr/science/physics/index|Français]]** • 🇩🇪 **[[de/science/physics/index|Deutsch]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/science/physics/index|English]]** · **[[ru/science/physics/index|Русский]]** · **[[zh/science/physics/index|中文]]** · **[[es/science/physics/index|Español]]** · **[[de/science/physics/index|Deutsch]]** · **[[fr/science/physics/index|Français]]** · **[[ar/science/physics/index|العربية]]**
 
----
+# Física
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Portuguese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Mecânica quântica, termodinâmica.

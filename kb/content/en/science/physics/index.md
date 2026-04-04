@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Physics"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "en"
-description: "Translation stub for index"
-tags: [en, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: en
+description: "Quantum mechanics, thermodynamics"
+tags: [en]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/science/physics/index|Русский]]** • 🇨🇳 **[[zh/science/physics/index|中文]]** • 🇪🇸 **[[es/science/physics/index|Español]]** • 🇸🇦 **[[ar/science/physics/index|العربية]]** • 🇫🇷 **[[fr/science/physics/index|Français]]** • 🇩🇪 **[[de/science/physics/index|Deutsch]]** • 🇧🇷 **[[pt/science/physics/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[ru/science/physics/index|Русский]]** · **[[zh/science/physics/index|中文]]** · **[[es/science/physics/index|Español]]** · **[[de/science/physics/index|Deutsch]]** · **[[fr/science/physics/index|Français]]** · **[[pt/science/physics/index|Português]]** · **[[ar/science/physics/index|العربية]]**
 
----
+# Physics
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to English)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Quantum mechanics, thermodynamics.

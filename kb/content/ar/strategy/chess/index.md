@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "الشطرنج"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "ar"
-description: "Translation stub for index"
-tags: [ar, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: ar
+description: "الافتتاحيات، الاستراتيجية، نهايات اللعب"
+tags: [ar]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/strategy/chess/index|Русский]]** • 🇺🇸 **[[en/strategy/chess/index|English]]** • 🇨🇳 **[[zh/strategy/chess/index|中文]]** • 🇪🇸 **[[es/strategy/chess/index|Español]]** • 🇫🇷 **[[fr/strategy/chess/index|Français]]** • 🇩🇪 **[[de/strategy/chess/index|Deutsch]]** • 🇧🇷 **[[pt/strategy/chess/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/strategy/chess/index|English]]** · **[[ru/strategy/chess/index|Русский]]** · **[[zh/strategy/chess/index|中文]]** · **[[es/strategy/chess/index|Español]]** · **[[de/strategy/chess/index|Deutsch]]** · **[[fr/strategy/chess/index|Français]]** · **[[pt/strategy/chess/index|Português]]**
 
----
+# الشطرنج
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Arabic)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+الافتتاحيات، الاستراتيجية، نهايات اللعب.

@@ -1,31 +1,16 @@
 ---
-title: index
+title: "Бизнес"
 date: 2025-12-21
-lastmod: 2025-12-21
+lastmod: 2026-04-04
 lang: ru
-description: Description for index
-tags:
-  - ru
-  - topic
-aliases: []
+description: "Цифровые продукты, рост, монетизация"
+tags: [ru]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇺🇸 **[[en/finance/business/index|English]]** • 🇨🇳 **[[zh/finance/business/index|中文]]** • 🇪🇸 **[[es/finance/business/index|Español]]** • 🇸🇦 **[[ar/finance/business/index|العربية]]** • 🇫🇷 **[[fr/finance/business/index|Français]]** • 🇩🇪 **[[de/finance/business/index|Deutsch]]** • 🇧🇷 **[[pt/finance/business/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/business/index|English]]** · **[[zh/finance/business/index|中文]]** · **[[es/finance/business/index|Español]]** · **[[de/finance/business/index|Deutsch]]** · **[[fr/finance/business/index|Français]]** · **[[pt/finance/business/index|Português]]** · **[[ar/finance/business/index|العربية]]**
 
----
+# Бизнес
 
-# index
-
-
-
----
-
-> [!abstract] 📬 Контакты
-> - **Telegram**: [ @hyrahmo ](https://t.me/hyrahmo)
-> - **GitHub**: [ hyrahmo ](https://github.com/hyrahmo)
-> - **Habr**: [ Профиль ](https://habr.com/users/hyrahmo)
-> - **Email**: [ Написать ](mailto:contact@hyrahmo.com)
+Цифровые продукты, рост, монетизация.

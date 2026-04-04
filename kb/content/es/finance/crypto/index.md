@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Cripto"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "es"
-description: "Translation stub for index"
-tags: [es, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: es
+description: "Blockchain, DeFi, tokenomics"
+tags: [es]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/finance/crypto/index|Русский]]** • 🇺🇸 **[[en/finance/crypto/index|English]]** • 🇨🇳 **[[zh/finance/crypto/index|中文]]** • 🇸🇦 **[[ar/finance/crypto/index|العربية]]** • 🇫🇷 **[[fr/finance/crypto/index|Français]]** • 🇩🇪 **[[de/finance/crypto/index|Deutsch]]** • 🇧🇷 **[[pt/finance/crypto/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/crypto/index|English]]** · **[[ru/finance/crypto/index|Русский]]** · **[[zh/finance/crypto/index|中文]]** · **[[de/finance/crypto/index|Deutsch]]** · **[[fr/finance/crypto/index|Français]]** · **[[pt/finance/crypto/index|Português]]** · **[[ar/finance/crypto/index|العربية]]**
 
----
+# Cripto
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Spanish)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Blockchain, DeFi, tokenomics.

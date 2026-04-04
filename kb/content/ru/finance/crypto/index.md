@@ -1,31 +1,16 @@
 ---
-title: index
+title: "Крипто"
 date: 2025-12-21
-lastmod: 2025-12-21
+lastmod: 2026-04-04
 lang: ru
-description: Description for index
-tags:
-  - ru
-  - topic
-aliases: []
+description: "Блокчейн, DeFi, токеномика"
+tags: [ru]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇺🇸 **[[en/finance/crypto/index|English]]** • 🇨🇳 **[[zh/finance/crypto/index|中文]]** • 🇪🇸 **[[es/finance/crypto/index|Español]]** • 🇸🇦 **[[ar/finance/crypto/index|العربية]]** • 🇫🇷 **[[fr/finance/crypto/index|Français]]** • 🇩🇪 **[[de/finance/crypto/index|Deutsch]]** • 🇧🇷 **[[pt/finance/crypto/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/crypto/index|English]]** · **[[zh/finance/crypto/index|中文]]** · **[[es/finance/crypto/index|Español]]** · **[[de/finance/crypto/index|Deutsch]]** · **[[fr/finance/crypto/index|Français]]** · **[[pt/finance/crypto/index|Português]]** · **[[ar/finance/crypto/index|العربية]]**
 
----
+# Крипто
 
-# index
-
-
-
----
-
-> [!abstract] 📬 Контакты
-> - **Telegram**: [ @hyrahmo ](https://t.me/hyrahmo)
-> - **GitHub**: [ hyrahmo ](https://github.com/hyrahmo)
-> - **Habr**: [ Профиль ](https://habr.com/users/hyrahmo)
-> - **Email**: [ Написать ](mailto:contact@hyrahmo.com)
+Блокчейн, DeFi, токеномика.

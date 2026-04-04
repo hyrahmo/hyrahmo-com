@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "生物黑客"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "zh"
-description: "Translation stub for index"
-tags: [zh, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: zh
+description: "睡眠、营养、神经化学"
+tags: [zh]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/meta/biohacking/index|Русский]]** • 🇺🇸 **[[en/meta/biohacking/index|English]]** • 🇪🇸 **[[es/meta/biohacking/index|Español]]** • 🇸🇦 **[[ar/meta/biohacking/index|العربية]]** • 🇫🇷 **[[fr/meta/biohacking/index|Français]]** • 🇩🇪 **[[de/meta/biohacking/index|Deutsch]]** • 🇧🇷 **[[pt/meta/biohacking/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/meta/biohacking/index|English]]** · **[[ru/meta/biohacking/index|Русский]]** · **[[es/meta/biohacking/index|Español]]** · **[[de/meta/biohacking/index|Deutsch]]** · **[[fr/meta/biohacking/index|Français]]** · **[[pt/meta/biohacking/index|Português]]** · **[[ar/meta/biohacking/index|العربية]]**
 
----
+# 生物黑客
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Chinese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+睡眠、营养、神经化学.

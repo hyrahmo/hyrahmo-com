@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "البيوهاكينغ"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "ar"
-description: "Translation stub for index"
-tags: [ar, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: ar
+description: "النوم، التغذية، الكيمياء العصبية"
+tags: [ar]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/meta/biohacking/index|Русский]]** • 🇺🇸 **[[en/meta/biohacking/index|English]]** • 🇨🇳 **[[zh/meta/biohacking/index|中文]]** • 🇪🇸 **[[es/meta/biohacking/index|Español]]** • 🇫🇷 **[[fr/meta/biohacking/index|Français]]** • 🇩🇪 **[[de/meta/biohacking/index|Deutsch]]** • 🇧🇷 **[[pt/meta/biohacking/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/meta/biohacking/index|English]]** · **[[ru/meta/biohacking/index|Русский]]** · **[[zh/meta/biohacking/index|中文]]** · **[[es/meta/biohacking/index|Español]]** · **[[de/meta/biohacking/index|Deutsch]]** · **[[fr/meta/biohacking/index|Français]]** · **[[pt/meta/biohacking/index|Português]]**
 
----
+# البيوهاكينغ
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Arabic)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+النوم، التغذية، الكيمياء العصبية.

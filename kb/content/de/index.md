@@ -1,27 +1,36 @@
 ---
-title: Deutsch
+title: "Deutsch"
 date: 2025-12-21
-lastmod: 2025-12-21
+lastmod: 2026-04-04
 lang: de
-description: Translation stub for index
-tags:
-  - de
-  - stub
+description: "Notizen auf Deutsch"
+tags: [de]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru///index|Русский]]** • 🇺🇸 **[[en///index|English]]** • 🇨🇳 **[[zh///index|中文]]** • 🇪🇸 **[[es///index|Español]]** • 🇸🇦 **[[ar///index|العربية]]** • 🇫🇷 **[[fr///index|Français]]** • 🇧🇷 **[[pt///index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/index|English]]** · **[[ru/index|Русский]]** · **[[zh/index|中文]]** · **[[es/index|Español]]** · **[[fr/index|Français]]** · **[[pt/index|Português]]** · **[[ar/index|العربية]]**
 
----
+### Technik
+- **[[de/engineering/ai/index|KI]]** — LLMs, Agenten, Computer Vision
+- **[[de/engineering/robotics/index|Robotik]]** — Hardware, Elektronik, Mechatronik
+- **[[de/engineering/software/index|Software]]** — Backend, Systeme, Architektur
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to German)...*
-<!-- TRANSLATE_END -->
+### Finanzen
+- **[[de/finance/business/index|Business]]** — Digitale Produkte, Wachstum, Monetarisierung
+- **[[de/finance/crypto/index|Krypto]]** — Blockchain, DeFi, Tokenomics
+- **[[de/finance/quant/index|Quant]]** — Algo-Trading, HFT, Marktmodelle
 
----
+### Wissenschaft
+- **[[de/science/math/index|Mathematik]]** — Lineare Algebra, Statistik, Wahrscheinlichkeit
+- **[[de/science/physics/index|Physik]]** — Quantenmechanik, Thermodynamik
 
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+### Strategie
+- **[[de/strategy/chess/index|Schach]]** — Eröffnungen, Strategie, Endspiele
+- **[[de/strategy/cs2/index|CS2]]** — Taktiken, Utility, Wirtschaft
+- **[[de/strategy/poker/index|Poker]]** — GTO, Ranges, Risikomanagement
+
+### Meta
+- **[[de/meta/learning/index|Lernen]]** — Spaced Repetition, Zettelkasten, Methodik
+- **[[de/meta/biohacking/index|Biohacking]]** — Schlaf, Ernährung, Neurochemie
+

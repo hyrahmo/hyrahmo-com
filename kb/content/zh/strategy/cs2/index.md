@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "CS2"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "zh"
-description: "Translation stub for index"
-tags: [zh, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: zh
+description: "战术、道具、经济"
+tags: [zh]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/strategy/cs2/index|Русский]]** • 🇺🇸 **[[en/strategy/cs2/index|English]]** • 🇪🇸 **[[es/strategy/cs2/index|Español]]** • 🇸🇦 **[[ar/strategy/cs2/index|العربية]]** • 🇫🇷 **[[fr/strategy/cs2/index|Français]]** • 🇩🇪 **[[de/strategy/cs2/index|Deutsch]]** • 🇧🇷 **[[pt/strategy/cs2/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/strategy/cs2/index|English]]** · **[[ru/strategy/cs2/index|Русский]]** · **[[es/strategy/cs2/index|Español]]** · **[[de/strategy/cs2/index|Deutsch]]** · **[[fr/strategy/cs2/index|Français]]** · **[[pt/strategy/cs2/index|Português]]** · **[[ar/strategy/cs2/index|العربية]]**
 
----
+# CS2
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Chinese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+战术、道具、经济.

@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "AI"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "en"
-description: "Translation stub for index"
-tags: [en, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: en
+description: "LLMs, agents, computer vision"
+tags: [en]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/engineering/ai/index|Русский]]** • 🇨🇳 **[[zh/engineering/ai/index|中文]]** • 🇪🇸 **[[es/engineering/ai/index|Español]]** • 🇸🇦 **[[ar/engineering/ai/index|العربية]]** • 🇫🇷 **[[fr/engineering/ai/index|Français]]** • 🇩🇪 **[[de/engineering/ai/index|Deutsch]]** • 🇧🇷 **[[pt/engineering/ai/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[ru/engineering/ai/index|Русский]]** · **[[zh/engineering/ai/index|中文]]** · **[[es/engineering/ai/index|Español]]** · **[[de/engineering/ai/index|Deutsch]]** · **[[fr/engineering/ai/index|Français]]** · **[[pt/engineering/ai/index|Português]]** · **[[ar/engineering/ai/index|العربية]]**
 
----
+# AI
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to English)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+LLMs, agents, computer vision.

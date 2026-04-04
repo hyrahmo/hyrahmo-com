@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "الرياضيات"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "ar"
-description: "Translation stub for index"
-tags: [ar, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: ar
+description: "الجبر الخطي، الإحصاء، الاحتمالات"
+tags: [ar]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/science/math/index|Русский]]** • 🇺🇸 **[[en/science/math/index|English]]** • 🇨🇳 **[[zh/science/math/index|中文]]** • 🇪🇸 **[[es/science/math/index|Español]]** • 🇫🇷 **[[fr/science/math/index|Français]]** • 🇩🇪 **[[de/science/math/index|Deutsch]]** • 🇧🇷 **[[pt/science/math/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/science/math/index|English]]** · **[[ru/science/math/index|Русский]]** · **[[zh/science/math/index|中文]]** · **[[es/science/math/index|Español]]** · **[[de/science/math/index|Deutsch]]** · **[[fr/science/math/index|Français]]** · **[[pt/science/math/index|Português]]**
 
----
+# الرياضيات
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Arabic)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+الجبر الخطي، الإحصاء، الاحتمالات.

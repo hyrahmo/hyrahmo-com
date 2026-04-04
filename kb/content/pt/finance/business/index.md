@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Negócios"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "pt"
-description: "Translation stub for index"
-tags: [pt, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: pt
+description: "Produtos digitais, crescimento, monetização"
+tags: [pt]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/finance/business/index|Русский]]** • 🇺🇸 **[[en/finance/business/index|English]]** • 🇨🇳 **[[zh/finance/business/index|中文]]** • 🇪🇸 **[[es/finance/business/index|Español]]** • 🇸🇦 **[[ar/finance/business/index|العربية]]** • 🇫🇷 **[[fr/finance/business/index|Français]]** • 🇩🇪 **[[de/finance/business/index|Deutsch]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/business/index|English]]** · **[[ru/finance/business/index|Русский]]** · **[[zh/finance/business/index|中文]]** · **[[es/finance/business/index|Español]]** · **[[de/finance/business/index|Deutsch]]** · **[[fr/finance/business/index|Français]]** · **[[ar/finance/business/index|العربية]]**
 
----
+# Negócios
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Portuguese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Produtos digitais, crescimento, monetização.

@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Ajedrez"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "es"
-description: "Translation stub for index"
-tags: [es, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: es
+description: "Aperturas, estrategia, finales"
+tags: [es]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/strategy/chess/index|Русский]]** • 🇺🇸 **[[en/strategy/chess/index|English]]** • 🇨🇳 **[[zh/strategy/chess/index|中文]]** • 🇸🇦 **[[ar/strategy/chess/index|العربية]]** • 🇫🇷 **[[fr/strategy/chess/index|Français]]** • 🇩🇪 **[[de/strategy/chess/index|Deutsch]]** • 🇧🇷 **[[pt/strategy/chess/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/strategy/chess/index|English]]** · **[[ru/strategy/chess/index|Русский]]** · **[[zh/strategy/chess/index|中文]]** · **[[de/strategy/chess/index|Deutsch]]** · **[[fr/strategy/chess/index|Français]]** · **[[pt/strategy/chess/index|Português]]** · **[[ar/strategy/chess/index|العربية]]**
 
----
+# Ajedrez
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Spanish)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Aperturas, estrategia, finales.

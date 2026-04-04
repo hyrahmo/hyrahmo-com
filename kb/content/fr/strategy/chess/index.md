@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Échecs"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "fr"
-description: "Translation stub for index"
-tags: [fr, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: fr
+description: "Ouvertures, stratégie, finales"
+tags: [fr]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/strategy/chess/index|Русский]]** • 🇺🇸 **[[en/strategy/chess/index|English]]** • 🇨🇳 **[[zh/strategy/chess/index|中文]]** • 🇪🇸 **[[es/strategy/chess/index|Español]]** • 🇸🇦 **[[ar/strategy/chess/index|العربية]]** • 🇩🇪 **[[de/strategy/chess/index|Deutsch]]** • 🇧🇷 **[[pt/strategy/chess/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/strategy/chess/index|English]]** · **[[ru/strategy/chess/index|Русский]]** · **[[zh/strategy/chess/index|中文]]** · **[[es/strategy/chess/index|Español]]** · **[[de/strategy/chess/index|Deutsch]]** · **[[pt/strategy/chess/index|Português]]** · **[[ar/strategy/chess/index|العربية]]**
 
----
+# Échecs
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to French)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Ouvertures, stratégie, finales.

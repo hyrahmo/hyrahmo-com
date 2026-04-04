@@ -1,31 +1,16 @@
 ---
-title: index
+title: "Физика"
 date: 2025-12-21
-lastmod: 2025-12-21
+lastmod: 2026-04-04
 lang: ru
-description: Description for index
-tags:
-  - ru
-  - topic
-aliases: []
+description: "Квантовая механика, термодинамика"
+tags: [ru]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇺🇸 **[[en/science/physics/index|English]]** • 🇨🇳 **[[zh/science/physics/index|中文]]** • 🇪🇸 **[[es/science/physics/index|Español]]** • 🇸🇦 **[[ar/science/physics/index|العربية]]** • 🇫🇷 **[[fr/science/physics/index|Français]]** • 🇩🇪 **[[de/science/physics/index|Deutsch]]** • 🇧🇷 **[[pt/science/physics/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/science/physics/index|English]]** · **[[zh/science/physics/index|中文]]** · **[[es/science/physics/index|Español]]** · **[[de/science/physics/index|Deutsch]]** · **[[fr/science/physics/index|Français]]** · **[[pt/science/physics/index|Português]]** · **[[ar/science/physics/index|العربية]]**
 
----
+# Физика
 
-# index
-
-
-
----
-
-> [!abstract] 📬 Контакты
-> - **Telegram**: [ @hyrahmo ](https://t.me/hyrahmo)
-> - **GitHub**: [ hyrahmo ](https://github.com/hyrahmo)
-> - **Habr**: [ Профиль ](https://habr.com/users/hyrahmo)
-> - **Email**: [ Написать ](mailto:contact@hyrahmo.com)
+Квантовая механика, термодинамика.

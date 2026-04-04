@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Learning"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "en"
-description: "Translation stub for index"
-tags: [en, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: en
+description: "Spaced repetition, Zettelkasten, methodology"
+tags: [en]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/meta/learning/index|Русский]]** • 🇨🇳 **[[zh/meta/learning/index|中文]]** • 🇪🇸 **[[es/meta/learning/index|Español]]** • 🇸🇦 **[[ar/meta/learning/index|العربية]]** • 🇫🇷 **[[fr/meta/learning/index|Français]]** • 🇩🇪 **[[de/meta/learning/index|Deutsch]]** • 🇧🇷 **[[pt/meta/learning/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[ru/meta/learning/index|Русский]]** · **[[zh/meta/learning/index|中文]]** · **[[es/meta/learning/index|Español]]** · **[[de/meta/learning/index|Deutsch]]** · **[[fr/meta/learning/index|Français]]** · **[[pt/meta/learning/index|Português]]** · **[[ar/meta/learning/index|العربية]]**
 
----
+# Learning
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to English)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Spaced repetition, Zettelkasten, methodology.

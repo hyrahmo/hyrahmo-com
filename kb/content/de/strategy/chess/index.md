@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Schach"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "de"
-description: "Translation stub for index"
-tags: [de, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: de
+description: "Eröffnungen, Strategie, Endspiele"
+tags: [de]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/strategy/chess/index|Русский]]** • 🇺🇸 **[[en/strategy/chess/index|English]]** • 🇨🇳 **[[zh/strategy/chess/index|中文]]** • 🇪🇸 **[[es/strategy/chess/index|Español]]** • 🇸🇦 **[[ar/strategy/chess/index|العربية]]** • 🇫🇷 **[[fr/strategy/chess/index|Français]]** • 🇧🇷 **[[pt/strategy/chess/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/strategy/chess/index|English]]** · **[[ru/strategy/chess/index|Русский]]** · **[[zh/strategy/chess/index|中文]]** · **[[es/strategy/chess/index|Español]]** · **[[fr/strategy/chess/index|Français]]** · **[[pt/strategy/chess/index|Português]]** · **[[ar/strategy/chess/index|العربية]]**
 
----
+# Schach
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to German)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Eröffnungen, Strategie, Endspiele.

@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "العملات المشفرة"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "ar"
-description: "Translation stub for index"
-tags: [ar, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: ar
+description: "البلوكتشين، التمويل اللامركزي"
+tags: [ar]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/finance/crypto/index|Русский]]** • 🇺🇸 **[[en/finance/crypto/index|English]]** • 🇨🇳 **[[zh/finance/crypto/index|中文]]** • 🇪🇸 **[[es/finance/crypto/index|Español]]** • 🇫🇷 **[[fr/finance/crypto/index|Français]]** • 🇩🇪 **[[de/finance/crypto/index|Deutsch]]** • 🇧🇷 **[[pt/finance/crypto/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/crypto/index|English]]** · **[[ru/finance/crypto/index|Русский]]** · **[[zh/finance/crypto/index|中文]]** · **[[es/finance/crypto/index|Español]]** · **[[de/finance/crypto/index|Deutsch]]** · **[[fr/finance/crypto/index|Français]]** · **[[pt/finance/crypto/index|Português]]**
 
----
+# العملات المشفرة
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Arabic)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+البلوكتشين، التمويل اللامركزي.

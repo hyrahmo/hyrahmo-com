@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "扑克"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "zh"
-description: "Translation stub for index"
-tags: [zh, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: zh
+description: "GTO、范围、风险管理"
+tags: [zh]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/strategy/poker/index|Русский]]** • 🇺🇸 **[[en/strategy/poker/index|English]]** • 🇪🇸 **[[es/strategy/poker/index|Español]]** • 🇸🇦 **[[ar/strategy/poker/index|العربية]]** • 🇫🇷 **[[fr/strategy/poker/index|Français]]** • 🇩🇪 **[[de/strategy/poker/index|Deutsch]]** • 🇧🇷 **[[pt/strategy/poker/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/strategy/poker/index|English]]** · **[[ru/strategy/poker/index|Русский]]** · **[[es/strategy/poker/index|Español]]** · **[[de/strategy/poker/index|Deutsch]]** · **[[fr/strategy/poker/index|Français]]** · **[[pt/strategy/poker/index|Português]]** · **[[ar/strategy/poker/index|العربية]]**
 
----
+# 扑克
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Chinese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+GTO、范围、风险管理.

@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "物理"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "zh"
-description: "Translation stub for index"
-tags: [zh, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: zh
+description: "量子力学、热力学"
+tags: [zh]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/science/physics/index|Русский]]** • 🇺🇸 **[[en/science/physics/index|English]]** • 🇪🇸 **[[es/science/physics/index|Español]]** • 🇸🇦 **[[ar/science/physics/index|العربية]]** • 🇫🇷 **[[fr/science/physics/index|Français]]** • 🇩🇪 **[[de/science/physics/index|Deutsch]]** • 🇧🇷 **[[pt/science/physics/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/science/physics/index|English]]** · **[[ru/science/physics/index|Русский]]** · **[[es/science/physics/index|Español]]** · **[[de/science/physics/index|Deutsch]]** · **[[fr/science/physics/index|Français]]** · **[[pt/science/physics/index|Português]]** · **[[ar/science/physics/index|العربية]]**
 
----
+# 物理
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Chinese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+量子力学、热力学.

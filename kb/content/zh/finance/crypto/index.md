@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "加密货币"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "zh"
-description: "Translation stub for index"
-tags: [zh, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: zh
+description: "区块链、DeFi、代币经济学"
+tags: [zh]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/finance/crypto/index|Русский]]** • 🇺🇸 **[[en/finance/crypto/index|English]]** • 🇪🇸 **[[es/finance/crypto/index|Español]]** • 🇸🇦 **[[ar/finance/crypto/index|العربية]]** • 🇫🇷 **[[fr/finance/crypto/index|Français]]** • 🇩🇪 **[[de/finance/crypto/index|Deutsch]]** • 🇧🇷 **[[pt/finance/crypto/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/crypto/index|English]]** · **[[ru/finance/crypto/index|Русский]]** · **[[es/finance/crypto/index|Español]]** · **[[de/finance/crypto/index|Deutsch]]** · **[[fr/finance/crypto/index|Français]]** · **[[pt/finance/crypto/index|Português]]** · **[[ar/finance/crypto/index|العربية]]**
 
----
+# 加密货币
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Chinese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+区块链、DeFi、代币经济学.

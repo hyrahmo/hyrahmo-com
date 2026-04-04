@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Robótica"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "pt"
-description: "Translation stub for index"
-tags: [pt, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: pt
+description: "Hardware, eletrônica, mecatrônica"
+tags: [pt]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/engineering/robotics/index|Русский]]** • 🇺🇸 **[[en/engineering/robotics/index|English]]** • 🇨🇳 **[[zh/engineering/robotics/index|中文]]** • 🇪🇸 **[[es/engineering/robotics/index|Español]]** • 🇸🇦 **[[ar/engineering/robotics/index|العربية]]** • 🇫🇷 **[[fr/engineering/robotics/index|Français]]** • 🇩🇪 **[[de/engineering/robotics/index|Deutsch]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/engineering/robotics/index|English]]** · **[[ru/engineering/robotics/index|Русский]]** · **[[zh/engineering/robotics/index|中文]]** · **[[es/engineering/robotics/index|Español]]** · **[[de/engineering/robotics/index|Deutsch]]** · **[[fr/engineering/robotics/index|Français]]** · **[[ar/engineering/robotics/index|العربية]]**
 
----
+# Robótica
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Portuguese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Hardware, eletrônica, mecatrônica.

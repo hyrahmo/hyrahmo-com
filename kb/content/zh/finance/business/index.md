@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "商业"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "zh"
-description: "Translation stub for index"
-tags: [zh, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: zh
+description: "数字产品、增长、变现"
+tags: [zh]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/finance/business/index|Русский]]** • 🇺🇸 **[[en/finance/business/index|English]]** • 🇪🇸 **[[es/finance/business/index|Español]]** • 🇸🇦 **[[ar/finance/business/index|العربية]]** • 🇫🇷 **[[fr/finance/business/index|Français]]** • 🇩🇪 **[[de/finance/business/index|Deutsch]]** • 🇧🇷 **[[pt/finance/business/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/business/index|English]]** · **[[ru/finance/business/index|Русский]]** · **[[es/finance/business/index|Español]]** · **[[de/finance/business/index|Deutsch]]** · **[[fr/finance/business/index|Français]]** · **[[pt/finance/business/index|Português]]** · **[[ar/finance/business/index|العربية]]**
 
----
+# 商业
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Chinese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+数字产品、增长、变现.

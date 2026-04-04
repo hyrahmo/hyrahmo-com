@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Biohacking"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "fr"
-description: "Translation stub for index"
-tags: [fr, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: fr
+description: "Sommeil, nutrition, neurochimie"
+tags: [fr]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/meta/biohacking/index|Русский]]** • 🇺🇸 **[[en/meta/biohacking/index|English]]** • 🇨🇳 **[[zh/meta/biohacking/index|中文]]** • 🇪🇸 **[[es/meta/biohacking/index|Español]]** • 🇸🇦 **[[ar/meta/biohacking/index|العربية]]** • 🇩🇪 **[[de/meta/biohacking/index|Deutsch]]** • 🇧🇷 **[[pt/meta/biohacking/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/meta/biohacking/index|English]]** · **[[ru/meta/biohacking/index|Русский]]** · **[[zh/meta/biohacking/index|中文]]** · **[[es/meta/biohacking/index|Español]]** · **[[de/meta/biohacking/index|Deutsch]]** · **[[pt/meta/biohacking/index|Português]]** · **[[ar/meta/biohacking/index|العربية]]**
 
----
+# Biohacking
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to French)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Sommeil, nutrition, neurochimie.

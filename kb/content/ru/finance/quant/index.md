@@ -1,31 +1,16 @@
 ---
-title: index
+title: "Квант"
 date: 2025-12-21
-lastmod: 2025-12-21
+lastmod: 2026-04-04
 lang: ru
-description: Description for index
-tags:
-  - ru
-  - topic
-aliases: []
+description: "Алготрейдинг, HFT, модели рынков"
+tags: [ru]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇺🇸 **[[en/finance/quant/index|English]]** • 🇨🇳 **[[zh/finance/quant/index|中文]]** • 🇪🇸 **[[es/finance/quant/index|Español]]** • 🇸🇦 **[[ar/finance/quant/index|العربية]]** • 🇫🇷 **[[fr/finance/quant/index|Français]]** • 🇩🇪 **[[de/finance/quant/index|Deutsch]]** • 🇧🇷 **[[pt/finance/quant/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/finance/quant/index|English]]** · **[[zh/finance/quant/index|中文]]** · **[[es/finance/quant/index|Español]]** · **[[de/finance/quant/index|Deutsch]]** · **[[fr/finance/quant/index|Français]]** · **[[pt/finance/quant/index|Português]]** · **[[ar/finance/quant/index|العربية]]**
 
----
+# Квант
 
-# index
-
-
-
----
-
-> [!abstract] 📬 Контакты
-> - **Telegram**: [ @hyrahmo ](https://t.me/hyrahmo)
-> - **GitHub**: [ hyrahmo ](https://github.com/hyrahmo)
-> - **Habr**: [ Профиль ](https://habr.com/users/hyrahmo)
-> - **Email**: [ Написать ](mailto:contact@hyrahmo.com)
+Алготрейдинг, HFT, модели рынков.

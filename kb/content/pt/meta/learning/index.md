@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Aprendizagem"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "pt"
-description: "Translation stub for index"
-tags: [pt, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: pt
+description: "Repetição espaçada, Zettelkasten, metodologia"
+tags: [pt]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/meta/learning/index|Русский]]** • 🇺🇸 **[[en/meta/learning/index|English]]** • 🇨🇳 **[[zh/meta/learning/index|中文]]** • 🇪🇸 **[[es/meta/learning/index|Español]]** • 🇸🇦 **[[ar/meta/learning/index|العربية]]** • 🇫🇷 **[[fr/meta/learning/index|Français]]** • 🇩🇪 **[[de/meta/learning/index|Deutsch]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/meta/learning/index|English]]** · **[[ru/meta/learning/index|Русский]]** · **[[zh/meta/learning/index|中文]]** · **[[es/meta/learning/index|Español]]** · **[[de/meta/learning/index|Deutsch]]** · **[[fr/meta/learning/index|Français]]** · **[[ar/meta/learning/index|العربية]]**
 
----
+# Aprendizagem
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Portuguese)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Repetição espaçada, Zettelkasten, metodologia.

@@ -52,7 +52,8 @@
       "Bash(ls /c/Users/hyrahmo/Documents/hyrahmo_com/kb/quartz/components/Share*)",
       "Bash(ls /tmp/hyrahmo-old/quartz/components/Share*)",
       "Bash(rm -rf /c/Users/hyrahmo/Documents/hyrahmo_com/kb/content/*)",
-      "Bash(cp -r /tmp/hyrahmo-old/content/* /c/Users/hyrahmo/Documents/hyrahmo_com/kb/content/)"
+      "Bash(cp -r /tmp/hyrahmo-old/content/* /c/Users/hyrahmo/Documents/hyrahmo_com/kb/content/)",
+      "Bash(node scripts/fill-content.mjs)"
     ],
     "additionalDirectories": [
       "\\tmp"

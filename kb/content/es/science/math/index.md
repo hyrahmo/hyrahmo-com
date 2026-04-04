@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Matemáticas"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "es"
-description: "Translation stub for index"
-tags: [es, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: es
+description: "Álgebra lineal, estadística, probabilidad"
+tags: [es]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/science/math/index|Русский]]** • 🇺🇸 **[[en/science/math/index|English]]** • 🇨🇳 **[[zh/science/math/index|中文]]** • 🇸🇦 **[[ar/science/math/index|العربية]]** • 🇫🇷 **[[fr/science/math/index|Français]]** • 🇩🇪 **[[de/science/math/index|Deutsch]]** • 🇧🇷 **[[pt/science/math/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/science/math/index|English]]** · **[[ru/science/math/index|Русский]]** · **[[zh/science/math/index|中文]]** · **[[de/science/math/index|Deutsch]]** · **[[fr/science/math/index|Français]]** · **[[pt/science/math/index|Português]]** · **[[ar/science/math/index|العربية]]**
 
----
+# Matemáticas
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Spanish)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Álgebra lineal, estadística, probabilidad.

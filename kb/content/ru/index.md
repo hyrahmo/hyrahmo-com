@@ -1,74 +1,36 @@
 ---
-title: Русский
+title: "Русский"
 date: 2025-12-21
-lastmod: 2025-12-21
+lastmod: 2026-04-04
 lang: ru
-description: Translation stub for index
-tags:
-  - ru
-  - stub
+description: "Заметки на русском"
+tags: [ru]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇺🇸 **[[en///index|English]]** • 🇨🇳 **[[zh///index|中文]]** • 🇪🇸 **[[es///index|Español]]** • 🇸🇦 **[[ar///index|العربية]]** • 🇫🇷 **[[fr///index|Français]]** • 🇩🇪 **[[de///index|Deutsch]]** • 🇧🇷 **[[pt///index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/index|English]]** · **[[zh/index|中文]]** · **[[es/index|Español]]** · **[[de/index|Deutsch]]** · **[[fr/index|Français]]** · **[[pt/index|Português]]** · **[[ar/index|العربية]]**
 
----
-# Деконструкция Сложности.
+### Инженерия
+- **[[ru/engineering/ai/index|ИИ]]** — LLM, агенты, компьютерное зрение
+- **[[ru/engineering/robotics/index|Робототехника]]** — Железо, электроника, мехатроника
+- **[[ru/engineering/software/index|Разработка]]** — Backend, системы, архитектура
 
-Привет. Я **Hyrahmo**.
+### Финансы
+- **[[ru/finance/business/index|Бизнес]]** — Цифровые продукты, рост, монетизация
+- **[[ru/finance/crypto/index|Крипто]]** — Блокчейн, DeFi, токеномика
+- **[[ru/finance/quant/index|Квант]]** — Алготрейдинг, HFT, модели рынков
 
-Я исследую сложные системы — от глобальных финансовых рынков и IT-архитектуры до соревновательных стратегий в киберспорте.
+### Наука
+- **[[ru/science/math/index|Математика]]** — Линейная алгебра, статистика, вероятность
+- **[[ru/science/physics/index|Физика]]** — Квантовая механика, термодинамика
 
-Моя цель — не просто накопить знания, а **деконструировать** их: разобрать сложные механизмы на фундаментальные принципы и объяснить их простым языком.
+### Стратегия
+- **[[ru/strategy/chess/index|Шахматы]]** — Дебюты, стратегия, эндшпили
+- **[[ru/strategy/cs2/index|CS2]]** — Тактика, утилиты, экономика
+- **[[ru/strategy/poker/index|Покер]]** — GTO, диапазоны, управление рисками
 
-Это моя открытая лаборатория и база знаний.
-
----
-
-### 🛠 Инженерия и Технологии
-*Создание систем.*
-
-*   **[[ru/engineering/software/index|Software Engineering]]** — Архитектура Backend, High-load системы и низкоуровневая оптимизация.
-*   **[[ru/engineering/ai/index|Artificial Intelligence]]** — Как работают LLM, автономные агенты и компьютерное зрение.
-*   **[[ru/engineering/robotics/index|Hardware & Robotics]]** — Робототехника, электроника и мехатроника.
-
-### 📈 Экономика и Капитал
-*Управление ресурсами.*
-
-*   **[[ru/finance/quant/index|Quantitative Finance]]** — Алгоритмический трейдинг, HFT и математические модели рынков.
-*   **[[ru/finance/business/index|Digital Business]]** — Построение экосистем в Telegram и YouTube, арбитраж трафика.
-*   **[[ru/finance/crypto/index|Web3 & DeFi]]** — Блокчейн-технологии и токеномика.
-
-### ♟️ Стратегия и Игры
-*Принятие решений в условиях неопределенности.*
-
-*   **[[ru/strategy/chess/index|Шахматы]]** — Теория дебютов и стратегическое планирование.
-*   **[[ru/strategy/cs2/index|Киберспорт (CS2)]]** — Командная тактика, микроконтроль и экономика раунда.
-*   **[[ru/strategy/poker/index|Покер]]** — GTO, психология и управление рисками.
-
-### ⚛️ Фундаментальные Науки
-*Законы реальности.*
-
-*   **[[ru/science/math/index|Математика]]** — Линейная алгебра, статистика и теория вероятностей.
-*   **[[ru/science/physics/index|Физика]]** — Квантовая механика, термодинамика и устройство вселенной.
-
----
-
-### 🧠 Мета-Навыки
-*Оптимизация человека.*
-
-*   **[[ru/meta/learning/index|Learning Engineering]]** — Методология быстрого обучения (Spaced Repetition, Zettelkasten).
-*   **[[ru/meta/biohacking/index|Биохакинг]]** — Оптимизация сна, питания и нейрохимии для продуктивности.
-
----
-
-> [!abstract] Связь
-> - **Telegram**: [ @hyrahmo ](https://t.me/hyrahmo) — Личный блог.
-> - **GitHub**: [ hyrahmo ](https://github.com/hyrahmo) — Код и проекты.
-> - **Email**: [ contact@hyrahmo.com ](mailto:contact@hyrahmo.com)
-
----
+### Мета
+- **[[ru/meta/learning/index|Обучение]]** — Интервальное повторение, Zettelkasten, методология
+- **[[ru/meta/biohacking/index|Биохакинг]]** — Сон, питание, нейрохимия
 

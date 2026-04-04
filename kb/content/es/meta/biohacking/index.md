@@ -1,27 +1,16 @@
 ---
-title: "index"
+title: "Biohacking"
 date: 2025-12-21
-lastmod: 2025-12-21
-lang: "es"
-description: "Translation stub for index"
-tags: [es, stub]
-# canonicalUrl:
-#  - ""
+lastmod: 2026-04-04
+lang: es
+description: "Sueño, nutrición, neuroquímica"
+tags: [es]
 draft: false
-enableToc: true
-comments: true
 ---
 
-> [!note] 🌍 Translations
-> 🇷🇺 **[[ru/meta/biohacking/index|Русский]]** • 🇺🇸 **[[en/meta/biohacking/index|English]]** • 🇨🇳 **[[zh/meta/biohacking/index|中文]]** • 🇸🇦 **[[ar/meta/biohacking/index|العربية]]** • 🇫🇷 **[[fr/meta/biohacking/index|Français]]** • 🇩🇪 **[[de/meta/biohacking/index|Deutsch]]** • 🇧🇷 **[[pt/meta/biohacking/index|Português]]** • 📡 **[RSS](index.xml)**
+> [!note] 🌍
+> **[[en/meta/biohacking/index|English]]** · **[[ru/meta/biohacking/index|Русский]]** · **[[zh/meta/biohacking/index|中文]]** · **[[de/meta/biohacking/index|Deutsch]]** · **[[fr/meta/biohacking/index|Français]]** · **[[pt/meta/biohacking/index|Português]]** · **[[ar/meta/biohacking/index|العربية]]**
 
----
+# Biohacking
 
-<!-- TRANSLATE_START -->
-*(Content to be translated to Spanish)...*
-<!-- TRANSLATE_END -->
-
----
-
-> [!abstract] 📬 Connect
-> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
+Sueño, nutrición, neuroquímica.
