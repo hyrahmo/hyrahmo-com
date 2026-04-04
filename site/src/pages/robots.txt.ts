@@ -5,6 +5,7 @@ export const GET: APIRoute = () => {
 Allow: /
 
 Sitemap: https://hyrahmo.com/sitemap-index.xml
+Sitemap: https://hyrahmo.com/sitemap.xml
 `;
 
   return new Response(body.trim(), {
