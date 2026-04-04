@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="About" description="About HYRAHMO — builder, thinker, systems person.">
+  <section class="page">
+    <h1>About</h1>
+    <div class="content">
+      <p>
+        I'm HYRAHMO. I build products, explore systems, and document what I learn along the way.
+      </p>
+      <p>
+        This site is both a portfolio and a living knowledge base.
+        The <a href="/">main site</a> is the polished side — projects, ideas, proof of work.
+        The <a href="/kb/">knowledge base</a> is the raw side — notes, connections, a digital garden.
+      </p>
+      <p>
+        I believe in learning in public, building useful things, and keeping things simple.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 6rem 2rem 4rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 2rem;
+  }
+
+  .content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .content p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-muted);
+  }
+
+  .content a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

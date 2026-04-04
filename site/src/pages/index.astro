@@ -1,0 +1,163 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Home">
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-tag">builder / thinker / systems person</p>
+      <h1 class="hero-title">
+        <span class="hero-line">I build things</span>
+        <span class="hero-line">and share what I learn.</span>
+      </h1>
+      <p class="hero-desc">
+        Projects, ideas, and a growing knowledge base — all in one place.
+      </p>
+      <div class="hero-actions">
+        <a href="/projects" class="btn btn-primary">View Projects</a>
+        <a href="/kb/" class="btn btn-ghost">Knowledge Base &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2 class="section-title">What I Do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Build</h3>
+          <p>Products, tools, and systems that solve real problems.</p>
+        </div>
+        <div class="card">
+          <h3>Learn</h3>
+          <p>Constantly exploring new ideas and documenting the journey.</p>
+        </div>
+        <div class="card">
+          <h3>Share</h3>
+          <p>Open knowledge base with notes, insights, and connections.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 4rem 2rem;
+  }
+
+  .hero-tag {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-line {
+    display: block;
+  }
+
+  .hero-desc {
+    font-size: 1.2rem;
+    color: var(--color-text-muted);
+    max-width: 500px;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all var(--transition);
+  }
+
+  .btn-primary {
+    background: var(--color-accent);
+    color: var(--color-bg);
+  }
+
+  .btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .btn-ghost {
+    border: 1px solid var(--color-border);
+    color: var(--color-text);
+  }
+
+  .btn-ghost:hover {
+    border-color: var(--color-text-muted);
+    opacity: 1;
+  }
+
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: border-color var(--transition);
+  }
+
+  .card:hover {
+    border-color: var(--color-text-muted);
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card p {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+  }
+</style>

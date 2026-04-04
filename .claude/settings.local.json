@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/hyrahmo/Documents/**)",
+      "Bash(npx wrangler:*)",
+      "Bash(grep -r \"pathPrefix\\\\|basePath\\\\|assetPrefix\" /c/Users/hyrahmo/Documents/bossto.blog/bossto.blog/quartz --include=*.ts --include=*.js)",
+      "Bash(grep -r \"pathPrefix\\\\|basePath\\\\|assetPrefix\" /c/Users/hyrahmo/Documents/hmo/quartz --include=*.ts --include=*.js)",
+      "Bash(pnpm --version)",
+      "Bash(grep -r \"baseUrl\\\\|baseHref\" /c/Users/hyrahmo/Documents/bossto.blog/bossto.blog/quartz --include=*.ts --include=*.js)",
+      "Bash(xargs grep:*)",
+      "Bash(find C:/Users/hyrahmo/Documents -iname *cloudflare* -o -iname *workers*)",
+      "Bash(grep -r baseDir /c/Users/hyrahmo/Documents/bossto.blog/bossto.blog/quartz --include=*.ts --include=*.js)",
+      "Bash(xargs head:*)",
+      "Bash(find /c/Users/hyrahmo/Documents -maxdepth 2 -name astro.config.*)",
+      "Bash(npm --version)",
+      "Bash(yarn --version)",
+      "Bash(npm help:*)",
+      "WebFetch(domain:developers.cloudflare.com)",
+      "WebFetch(domain:quartz.jzhao.xyz)",
+      "WebFetch(domain:docs.astro.build)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npx quartz:*)",
+      "Bash(npm view:*)",
+      "Bash(npm search:*)",
+      "WebFetch(domain:api.github.com)",
+      "Read(//tmp/quartz_ref/quartz/plugins/emitters/**)",
+      "Read(//tmp/quartz_ref/**)",
+      "Bash(find /tmp/quartz_ref/quartz/plugins/emitters/ -type f -name *.ts)",
+      "Bash(grep -rn \"\\\\-\\\\-output\\\\|output.*dir\\\\|outputDir\" /tmp/quartz_ref/quartz/ --include=*.ts --include=*.tsx)",
+      "WebFetch(domain:docs.npmjs.com)",
+      "Bash(npm install:*)",
+      "Bash(git init:*)",
+      "Bash(git branch:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
+    ]
+  }
+}

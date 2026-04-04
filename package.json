@@ -1,0 +1,19 @@
+{
+  "name": "hyrahmo-com",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build:site": "cd site && pnpm build",
+    "build:kb": "cd kb && npx quartz build -o ../dist/kb",
+    "build:merge": "node scripts/merge.mjs",
+    "build": "pnpm clean && pnpm build:site && pnpm build:kb && pnpm build:merge",
+    "dev:site": "cd site && pnpm dev",
+    "dev:kb": "cd kb && npx quartz build --serve --port 8080",
+    "preview": "pnpm build && npx wrangler dev",
+    "deploy": "pnpm build && npx wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.80.0"
+  }
+}
