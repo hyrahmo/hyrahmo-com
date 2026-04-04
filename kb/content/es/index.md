@@ -1,0 +1,27 @@
+---
+title: Español
+date: 2025-12-21
+lastmod: 2025-12-21
+lang: es
+description: Translation stub for index
+tags:
+  - es
+  - stub
+draft: false
+enableToc: true
+comments: true
+---
+
+> [!note] 🌍 Translations
+> 🇷🇺 **[[ru///index|Русский]]** • 🇺🇸 **[[en///index|English]]** • 🇨🇳 **[[zh///index|中文]]** • 🇸🇦 **[[ar///index|العربية]]** • 🇫🇷 **[[fr///index|Français]]** • 🇩🇪 **[[de///index|Deutsch]]** • 🇧🇷 **[[pt///index|Português]]** • 📡 **[RSS](index.xml)**
+
+---
+
+<!-- TRANSLATE_START -->
+*(Content to be translated to Spanish)...*
+<!-- TRANSLATE_END -->
+
+---
+
+> [!abstract] 📬 Connect
+> - **X (Twitter)**: [ @hyrahmo ](https://twitter.com/hyrahmo)
