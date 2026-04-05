@@ -65,7 +65,9 @@
       "Bash(curl -sL -H \"User-Agent: Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/120.0.0.0 Safari/537.36\" \"https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap\")",
       "Bash(curl -sL \"https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx_cwhsk.woff2\" -o jbmono-400.woff2)",
       "Bash(curl -sL \"https://fonts.gstatic.com/s/jetbrainsmono/v24/tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPx7cwhsk.woff2\" -o jbmono-500.woff2)",
-      "Bash(ls -la jbmono*)"
+      "Bash(ls -la jbmono*)",
+      "Bash(find \"C:/Users/hyrahmo/Documents/hyrahmoru/src/content/projects\" -type f -name \"*.md\" -exec head -10 {} \\\\;)",
+      "Bash(pnpm add:*)"
     ],
     "additionalDirectories": [
       "\\tmp"

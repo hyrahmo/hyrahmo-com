@@ -1,145 +1,102 @@
-/* === Self-hosted fonts (no Google Fonts render-blocking) === */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/inter-400.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('/fonts/inter-500.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/fonts/inter-600.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url('/fonts/inter-700.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/jbmono-400.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'JetBrains Mono';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('/fonts/jbmono-500.woff2') format('woff2');
-}
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
 
-/* === Dark theme (default) === */
-:root,
-[data-theme="dark"] {
+/* === Theme tokens === */
+@theme {
+  --font-sans: 'Inter Variable', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', 'Fira Code', monospace;
+
   --color-bg: #0a0a0a;
   --color-bg-alpha: rgba(10, 10, 10, 0.85);
   --color-surface: #111111;
+  --color-surface-elevated: #1a1a1f;
   --color-text: #e5e5e5;
-  --color-text-muted: #737373;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
   --color-accent: #ffffff;
-  --color-border: #262626;
-  color-scheme: dark;
+  --color-accent-hover: #e4e4e7;
+  --color-border: #1f1f23;
+  --color-link: #60a5fa;
 }
 
-/* === Light theme === */
-[data-theme="light"] {
-  --color-bg: #fafafa;
-  --color-bg-alpha: rgba(250, 250, 250, 0.85);
-  --color-surface: #ffffff;
-  --color-text: #171717;
-  --color-text-muted: #737373;
-  --color-accent: #0a0a0a;
-  --color-border: #e5e5e5;
-  color-scheme: light;
-}
-
-:root {
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-  --max-width: 1200px;
-  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* === Base === */
 html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   background: var(--color-bg);
-  min-height: 100%;
+  color-scheme: dark;
 }
 
 body {
   font-family: var(--font-sans);
   background: var(--color-bg);
   color: var(--color-text);
-  line-height: 1.6;
   min-height: 100dvh;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-a {
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: opacity var(--transition);
+/* Noise texture overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-a:hover {
-  opacity: 0.7;
+/* === Light theme === */
+[data-theme="light"] {
+  --color-bg: #f5f5f4;
+  --color-bg-alpha: rgba(245, 245, 244, 0.85);
+  --color-surface: #ffffff;
+  --color-surface-elevated: #fafaf9;
+  --color-text: #0c0c0d;
+  --color-text-secondary: #52525b;
+  --color-text-muted: #a1a1aa;
+  --color-accent: #18181b;
+  --color-accent-hover: #27272a;
+  --color-border: #e4e4e7;
+  --color-link: #2563eb;
+  color-scheme: light;
 }
 
+[data-theme="light"] body::after {
+  opacity: 0.025;
+}
+
+/* === Selection === */
 ::selection {
   background: rgba(128, 128, 128, 0.25);
 }
 
-/* === Animations === */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* === Links === */
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+/* === Scroll animations === */
+[data-animate] {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.animate-in {
-  animation: fadeInUp 0.6s ease-out both;
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-
-.animate-in-delay-1 { animation-delay: 0.1s; }
-.animate-in-delay-2 { animation-delay: 0.2s; }
-.animate-in-delay-3 { animation-delay: 0.3s; }
-.animate-in-delay-4 { animation-delay: 0.4s; }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
+  [data-animate] {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }

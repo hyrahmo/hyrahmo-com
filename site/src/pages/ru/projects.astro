@@ -1,39 +1,68 @@
 ---
 import Base from '../../layouts/Base.astro';
+
+const projects = [
+  {
+    title: 'hyrahmo.com',
+    desc: 'Этот сайт. Astro + Quartz на Cloudflare Workers.',
+    tag: 'Активен',
+    color: '#10b981',
+    links: [
+      { label: 'Заметки', href: '/kb/ru/' },
+      { label: 'GitHub', href: 'https://github.com/hyrahmo/hyrahmo-com' },
+    ],
+  },
+  {
+    title: 'AI Research',
+    desc: 'LLM, агенты, компьютерное зрение — заметки и эксперименты.',
+    tag: 'Активен',
+    color: '#8b5cf6',
+    links: [
+      { label: 'Заметки', href: '/kb/ru/engineering/ai/' },
+    ],
+  },
+  {
+    title: 'Квант. финансы',
+    desc: 'Алготрейдинг, модели рынков, HFT.',
+    tag: 'Планы',
+    color: '#2563eb',
+    links: [
+      { label: 'Заметки', href: '/kb/ru/finance/quant/' },
+    ],
+  },
+  {
+    title: 'Скоро ещё',
+    desc: 'Новые проекты в работе.',
+    tag: 'Soon',
+    color: '#71717a',
+    links: [],
+  },
+];
 ---
-<Base title="Проекты" lang="ru" description="Проекты HYRAHMO — то, что я построил.">
-  <section class="page">
-    <h1 class="animate-in">Проекты</h1>
-    <p class="subtitle animate-in animate-in-delay-1">То, что я построил и над чем работаю.</p>
-    <div class="projects">
-      <article class="project animate-in animate-in-delay-2">
-        <div class="project-header">
-          <h2>hyrahmo.com</h2>
-          <span class="tag">Этот сайт</span>
+<Base title="Проекты" lang="ru" description="Проекты HYRAHMO.">
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <h1 data-animate class="text-3xl sm:text-4xl font-bold tracking-tight mb-2">Проекты</h1>
+    <p data-animate data-animate-delay="100" class="text-[var(--color-text-secondary)] text-lg mb-10">То, что строю и над чем работаю.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      {projects.map((p, i) => (
+        <div data-animate data-animate-delay={100 + i * 80} class="p-5 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl hover:border-[var(--color-text-muted)] transition-all group">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-2 h-2 rounded-full" style={`background: ${p.color}`}></span>
+            <h2 class="font-semibold">{p.title}</h2>
+            <span class="ml-auto font-mono text-xs text-[var(--color-text-muted)]">{p.tag}</span>
+          </div>
+          <p class="text-sm text-[var(--color-text-muted)] mb-3">{p.desc}</p>
+          {p.links.length > 0 && (
+            <div class="flex gap-3">
+              {p.links.map(l => (
+                <a href={l.href} target={l.href.startsWith('http') ? '_blank' : undefined}
+                   class="text-xs text-[var(--color-link)] hover:underline">{l.label} →</a>
+              ))}
+            </div>
+          )}
         </div>
-        <p>Персональный сайт и база знаний. Astro + Quartz на Cloudflare Workers.</p>
-      </article>
-      <article class="project animate-in animate-in-delay-3">
-        <div class="project-header">
-          <h2>Скоро ещё</h2>
-          <span class="tag">WIP</span>
-        </div>
-        <p>Новые проекты в работе. Следите за обновлениями.</p>
-      </article>
+      ))}
     </div>
   </section>
 </Base>
-
-<style>
-  .page { max-width: 680px; margin: 0 auto; padding: 6rem 2rem 4rem; }
-  h1 { font-size: clamp(2rem, 5vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 0.5rem; }
-  .subtitle { color: var(--color-text-muted); font-size: 1.1rem; margin-bottom: 3rem; }
-  .projects { display: flex; flex-direction: column; gap: 1.5rem; }
-  .project { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.5rem 2rem; transition: border-color var(--transition), transform var(--transition); }
-  .project:hover { border-color: var(--color-text-muted); transform: translateY(-2px); }
-  .project-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.5rem; }
-  .project h2 { font-size: 1.2rem; font-weight: 600; }
-  .tag { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-muted); border: 1px solid var(--color-border); padding: 0.15rem 0.5rem; border-radius: 4px; }
-  .project p { color: var(--color-text-muted); font-size: 0.95rem; }
-  @media (max-width: 640px) { .page { padding: 5rem 1rem 3rem; } .project { padding: 1.25rem; } }
-</style>

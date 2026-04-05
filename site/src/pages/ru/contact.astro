@@ -4,34 +4,20 @@ import { getSocials } from '../../socials';
 const socials = getSocials('ru');
 ---
 <Base title="Контакт" lang="ru" description="Связаться с HYRAHMO.">
-  <section class="page">
-    <h1 class="animate-in">Контакт</h1>
-    <div class="content animate-in animate-in-delay-1">
-      <p>Хочешь сотрудничать, задать вопрос или просто написать?</p>
-      <div class="links">
-        <a href="mailto:hello@hyrahmo.com" class="contact-link">
-          <span class="label">Email</span>
-          <span class="value">hello@hyrahmo.com</span>
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <h1 data-animate class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Контакт</h1>
+    <p data-animate data-animate-delay="100" class="text-[var(--color-text-secondary)] text-lg mb-8">Написать, сотрудничать, задать вопрос.</p>
+    <div class="space-y-2">
+      <a data-animate data-animate-delay="150" href="mailto:hello@hyrahmo.com" class="flex items-center gap-4 p-4 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl hover:border-[var(--color-text-muted)] transition-all hover:-translate-y-0.5">
+        <span class="font-mono text-xs text-[var(--color-text-muted)] w-20">Email</span>
+        <span class="text-[var(--color-accent)]">hello@hyrahmo.com</span>
+      </a>
+      {socials.map((s, i) => (
+        <a data-animate data-animate-delay={200 + i * 50} href={s.url} target="_blank" rel="noopener" class="flex items-center gap-4 p-4 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl hover:border-[var(--color-text-muted)] transition-all hover:-translate-y-0.5">
+          <span class="font-mono text-xs text-[var(--color-text-muted)] w-20">{s.label}</span>
+          <span class="text-[var(--color-accent)]">{s.handle}</span>
         </a>
-        {socials.map(s => (
-          <a href={s.url} class="contact-link" target="_blank" rel="noopener">
-            <span class="label">{s.label}</span>
-            <span class="value">{s.handle}</span>
-          </a>
-        ))}
-      </div>
+      ))}
     </div>
   </section>
 </Base>
-
-<style>
-  .page { max-width: 680px; margin: 0 auto; padding: 6rem 2rem 4rem; }
-  h1 { font-size: clamp(2rem, 5vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; margin-bottom: 2rem; }
-  .content p { color: var(--color-text-muted); font-size: 1.1rem; margin-bottom: 2.5rem; }
-  .links { display: flex; flex-direction: column; gap: 0.75rem; }
-  .contact-link { display: flex; align-items: center; gap: 1.5rem; padding: 1rem 1.5rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: 12px; transition: border-color var(--transition), transform var(--transition); }
-  .contact-link:hover { border-color: var(--color-text-muted); opacity: 1; transform: translateY(-2px); }
-  .label { font-family: var(--font-mono); font-size: 0.75rem; color: var(--color-text-muted); min-width: 80px; }
-  .value { font-size: 0.95rem; color: var(--color-accent); }
-  @media (max-width: 640px) { .page { padding: 5rem 1rem 3rem; } .contact-link { padding: 0.875rem 1rem; gap: 1rem; } }
-</style>

@@ -3,20 +3,25 @@ interface Props {
   title: string;
   description?: string;
   lang?: string;
+  ogImage?: string;
 }
 
-const { title, description = 'HYRAHMO — personal site & knowledge base', lang = 'en' } = Astro.props;
+const { title, description = 'HYRAHMO — builder, thinker, systems person', lang = 'en', ogImage = '/og.png' } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const ogImage = new URL('/og.png', Astro.site);
-
-// i18n
-const path = Astro.url.pathname;
+const ogURL = new URL(ogImage, Astro.site);
 const isRu = lang === 'ru';
-const altLang = isRu ? 'en' : 'ru';
+const path = Astro.url.pathname;
 const altPath = isRu ? path.replace(/^\/ru/, '') || '/' : `/ru${path === '/' ? '' : path}`;
 const altURL = new URL(altPath, Astro.site);
 const prefix = isRu ? '/ru' : '';
-const ogLocale = isRu ? 'ru_RU' : 'en_US';
+
+const nav = [
+  { href: `${prefix}/`, label: isRu ? 'Главная' : 'Home' },
+  { href: `${prefix}/projects`, label: isRu ? 'Проекты' : 'Projects' },
+  { href: `${prefix}/blog`, label: isRu ? 'Блог' : 'Blog' },
+  { href: isRu ? '/kb/ru/' : '/kb/', label: isRu ? 'Заметки' : 'Notes' },
+  { href: `${prefix}/contact`, label: isRu ? 'Контакт' : 'Contact' },
+];
 ---
 <!doctype html>
 <html lang={lang} data-theme="dark">
@@ -28,146 +33,155 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
   <meta name="generator" content={Astro.generator} />
   <meta name="theme-color" content="#0a0a0a" />
 
-  <!-- Canonical & Alternate -->
   <link rel="canonical" href={canonicalURL.href} />
-  <link rel="alternate" hreflang={altLang} href={altURL.href} />
-  <link rel="alternate" hreflang={lang} href={canonicalURL.href} />
+  <link rel="alternate" hreflang={isRu ? 'en' : 'ru'} href={altURL.href} />
   <link rel="alternate" hreflang="x-default" href={new URL(isRu ? altPath : path, Astro.site).href} />
 
-  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalURL.href} />
-  <meta property="og:title" content={`${title} | HYRAHMO`} />
+  <meta property="og:title" content={`${title} — HYRAHMO`} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={ogImage.href} />
+  <meta property="og:image" content={ogURL.href} />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:site_name" content="HYRAHMO" />
-  <meta property="og:locale" content={ogLocale} />
-
-  <!-- Twitter -->
+  <meta property="og:locale" content={isRu ? 'ru_RU' : 'en_US'} />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={`${title} | HYRAHMO`} />
-  <meta name="twitter:description" content={description} />
-  <meta name="twitter:image" content={ogImage.href} />
 
-  <!-- Favicon: all sizes -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
-  <!-- Fonts: self-hosted, no render-blocking external requests -->
-
-  <!-- Structured Data -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "HYRAHMO",
     "url": "https://hyrahmo.com",
-    "description": description,
-    "inLanguage": [lang === 'ru' ? 'ru-RU' : 'en-US'],
-    "author": {
-      "@type": "Person",
-      "name": "HYRAHMO",
-      "url": "https://hyrahmo.com"
-    }
+    "author": { "@type": "Person", "name": "HYRAHMO", "url": "https://hyrahmo.com" }
   })} />
 
-  <!-- Theme: prevent flash -->
   <script is:inline>
     const t = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', t);
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', t === 'dark' ? '#0a0a0a' : '#fafafa');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', t === 'dark' ? '#0a0a0a' : '#f5f5f4');
   </script>
 
-  <title>{title} | HYRAHMO</title>
+  <title>{title} — HYRAHMO</title>
 </head>
-<body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a href={`${prefix}/`} class="nav-logo">HYRAHMO</a>
+<body class="font-sans leading-relaxed">
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href={`${prefix}/`} class="text-lg font-bold tracking-wide text-[var(--color-accent)]">HYRAHMO</a>
 
-      <!-- Desktop nav -->
-      <div class="nav-links desktop-only">
-        <a href={`${prefix}/about`}>{isRu ? 'Обо мне' : 'About'}</a>
-        <a href={`${prefix}/projects`}>{isRu ? 'Проекты' : 'Projects'}</a>
-        <a href={isRu ? '/kb/ru/' : '/kb/'}>{isRu ? 'Заметки' : 'Notes'}</a>
-        <a href={`${prefix}/contact`}>{isRu ? 'Контакт' : 'Contact'}</a>
-        <a href={altPath} class="lang-switch">{isRu ? 'EN' : 'RU'}</a>
-        <button class="theme-toggle" id="theme-toggle-desktop" aria-label="Toggle theme">
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      {/* Desktop nav */}
+      <nav class="hidden md:flex items-center gap-5 text-sm">
+        {nav.map(n => (
+          <a href={n.href} class="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">{n.label}</a>
+        ))}
+        <a href={altPath} class="font-mono text-xs px-2 py-0.5 border border-[var(--color-border)] rounded text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all">{isRu ? 'EN' : 'RU'}</a>
+        <button id="theme-desktop" aria-label="Toggle theme" class="p-1.5 border border-[var(--color-border)] rounded-lg text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all cursor-pointer">
+          <svg class="w-4 h-4 dark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="w-4 h-4 light-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-      </div>
+      </nav>
 
-      <!-- Mobile controls -->
-      <div class="mobile-controls mobile-only">
-        <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle theme">
-          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      {/* Mobile controls */}
+      <div class="flex md:hidden items-center gap-2">
+        <button id="theme-mobile" aria-label="Toggle theme" class="p-1.5 border border-[var(--color-border)] rounded-lg text-[var(--color-text-muted)] cursor-pointer">
+          <svg class="w-4 h-4 dark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+          <svg class="w-4 h-4 light-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <button class="burger" id="burger" aria-label="Menu">
-          <svg class="burger-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
-          <svg class="burger-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        <button id="burger" aria-label="Menu" class="p-1 text-[var(--color-text)] cursor-pointer">
+          <svg class="w-6 h-6 burger-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          <svg class="w-6 h-6 burger-close hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
       </div>
     </div>
 
-    <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobile-menu">
-      <a href={`${prefix}/about`}>{isRu ? 'Обо мне' : 'About'}</a>
-      <a href={`${prefix}/projects`}>{isRu ? 'Проекты' : 'Projects'}</a>
-      <a href={isRu ? '/kb/ru/' : '/kb/'}>{isRu ? 'Заметки' : 'Notes'}</a>
-      <a href={`${prefix}/contact`}>{isRu ? 'Контакт' : 'Contact'}</a>
-      <a href={altPath} class="lang-switch">{isRu ? 'EN' : 'RU'}</a>
+    {/* Mobile menu */}
+    <div id="mobile-menu" class="hidden flex-col px-4 sm:px-6 pb-4 border-t border-[var(--color-border)] bg-[var(--color-bg)] md:hidden">
+      {nav.map(n => (
+        <a href={n.href} class="py-3 text-base text-[var(--color-text-secondary)] border-b border-[var(--color-border)] last:border-b-0 hover:text-[var(--color-accent)] transition-colors">{n.label}</a>
+      ))}
+      <a href={altPath} class="mt-2 w-fit font-mono text-sm px-3 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">{isRu ? 'EN' : 'RU'}</a>
     </div>
-  </nav>
+  </header>
 
-  <main>
+  <main class="pt-14">
     <slot />
   </main>
 
-  <footer class="footer">
-    <div class="footer-inner">
+  <!-- Footer -->
+  <footer class="border-t border-[var(--color-border)] mt-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-sm text-[var(--color-text-muted)]">
       <span>&copy; {new Date().getFullYear()} HYRAHMO</span>
-      <div class="footer-links">
-        <a href="https://github.com/hyrahmo" target="_blank" rel="noopener">GitHub</a>
-        <a href={isRu ? 'https://x.com/hyrahmoru' : 'https://x.com/hyrahmo'} target="_blank" rel="noopener">X</a>
-        <a href={isRu ? 'https://t.me/hyrahmoru' : 'https://t.me/hyrahmo'} target="_blank" rel="noopener">Telegram</a>
-        <a href={isRu ? '/kb/ru/' : '/kb/'}>{isRu ? 'Заметки' : 'Notes'}</a>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/hyrahmo" target="_blank" rel="noopener" class="hover:text-[var(--color-accent)] transition-colors">GitHub</a>
+        <a href={isRu ? 'https://x.com/hyrahmoru' : 'https://x.com/hyrahmo'} target="_blank" rel="noopener" class="hover:text-[var(--color-accent)] transition-colors">X</a>
+        <a href={isRu ? 'https://t.me/hyrahmoru' : 'https://t.me/hyrahmo'} target="_blank" rel="noopener" class="hover:text-[var(--color-accent)] transition-colors">Telegram</a>
+        <a href={isRu ? '/kb/ru/' : '/kb/'} class="hover:text-[var(--color-accent)] transition-colors">{isRu ? 'Заметки' : 'Notes'}</a>
       </div>
     </div>
   </footer>
 
   <script is:inline>
-    // Theme toggle
+    // Theme
     function toggleTheme() {
-      const cur = document.documentElement.getAttribute('data-theme');
-      const next = cur === 'dark' ? 'light' : 'dark';
+      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('theme', next);
-      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'dark' ? '#0a0a0a' : '#fafafa');
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content', next === 'dark' ? '#0a0a0a' : '#f5f5f4');
+      updateIcons();
     }
-    document.getElementById('theme-toggle-desktop')?.addEventListener('click', toggleTheme);
-    document.getElementById('theme-toggle-mobile')?.addEventListener('click', toggleTheme);
+    function updateIcons() {
+      const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+      document.querySelectorAll('.dark-icon').forEach(el => el.classList.toggle('hidden', !dark));
+      document.querySelectorAll('.light-icon').forEach(el => el.classList.toggle('hidden', dark));
+    }
+    document.getElementById('theme-desktop')?.addEventListener('click', toggleTheme);
+    document.getElementById('theme-mobile')?.addEventListener('click', toggleTheme);
+    updateIcons();
 
-    // Burger menu
+    // Burger
     const burger = document.getElementById('burger');
     const menu = document.getElementById('mobile-menu');
     burger?.addEventListener('click', () => {
-      const open = menu.classList.toggle('is-open');
-      burger.classList.toggle('is-open', open);
+      const open = !menu.classList.contains('flex');
+      menu.classList.toggle('hidden', !open);
+      menu.classList.toggle('flex', open);
+      burger.querySelector('.burger-open').classList.toggle('hidden', open);
+      burger.querySelector('.burger-close').classList.toggle('hidden', !open);
       document.body.style.overflow = open ? 'hidden' : '';
     });
-    // Close on link click
-    menu?.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        menu.classList.remove('is-open');
-        burger.classList.remove('is-open');
-        document.body.style.overflow = '';
-      });
+    menu?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      menu.classList.remove('flex');
+      document.body.style.overflow = '';
+    }));
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 8) {
+        header.style.backdropFilter = 'blur(12px) saturate(180%)';
+        header.style.background = 'var(--color-bg-alpha)';
+        header.style.borderBottom = '1px solid var(--color-border)';
+      } else {
+        header.style.backdropFilter = 'none';
+        header.style.background = 'transparent';
+        header.style.borderBottom = '1px solid transparent';
+      }
+    }, { passive: true });
+
+    // Scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-animate]').forEach(el => {
+      const delay = el.getAttribute('data-animate-delay');
+      if (delay) el.style.transitionDelay = delay + 'ms';
+      observer.observe(el);
     });
   </script>
 </body>
@@ -175,196 +189,4 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
 
 <style is:global>
   @import '../styles/global.css';
-</style>
-
-<style>
-  .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    background: var(--color-bg-alpha);
-    border-bottom: 1px solid var(--color-border);
-  }
-
-  .nav-inner {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0.875rem 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .nav-logo {
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 0.05em;
-    flex-shrink: 0;
-  }
-
-  /* Desktop nav */
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    font-size: 0.9rem;
-  }
-
-  .nav-links a {
-    color: var(--color-text-muted);
-    transition: color var(--transition);
-  }
-
-  .nav-links a:hover {
-    color: var(--color-accent);
-    opacity: 1;
-  }
-
-  .lang-switch {
-    font-family: var(--font-mono);
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 0.2rem 0.45rem;
-    border: 1px solid var(--color-border);
-    border-radius: 4px;
-    color: var(--color-text-muted) !important;
-    transition: all var(--transition);
-  }
-
-  .lang-switch:hover {
-    color: var(--color-accent) !important;
-    border-color: var(--color-text-muted);
-    opacity: 1 !important;
-  }
-
-  .theme-toggle {
-    background: none;
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    padding: 0.35rem;
-    cursor: pointer;
-    color: var(--color-text-muted);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all var(--transition);
-    flex-shrink: 0;
-  }
-
-  .theme-toggle:hover {
-    color: var(--color-accent);
-    border-color: var(--color-text-muted);
-  }
-
-  [data-theme="dark"] .icon-sun { display: block; }
-  [data-theme="dark"] .icon-moon { display: none; }
-  [data-theme="light"] .icon-sun { display: none; }
-  [data-theme="light"] .icon-moon { display: block; }
-
-  /* Burger button */
-  .burger {
-    background: none;
-    border: none;
-    color: var(--color-text);
-    cursor: pointer;
-    padding: 0.25rem;
-    display: flex;
-    align-items: center;
-  }
-
-  .burger .burger-close { display: none; }
-  .burger.is-open .burger-open { display: none; }
-  .burger.is-open .burger-close { display: block; }
-
-  .mobile-controls {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  /* Mobile menu — hidden on desktop, toggled on mobile */
-  .mobile-menu {
-    display: none;
-    flex-direction: column;
-    padding: 1rem 1.5rem 1.5rem;
-    border-top: 1px solid var(--color-border);
-    background: var(--color-bg);
-  }
-
-  .mobile-menu a {
-    padding: 0.75rem 0;
-    font-size: 1.1rem;
-    color: var(--color-text-muted);
-    border-bottom: 1px solid var(--color-border);
-    transition: color var(--transition);
-  }
-
-  .mobile-menu a:last-child {
-    border-bottom: none;
-  }
-
-  .mobile-menu a:hover {
-    color: var(--color-accent);
-    opacity: 1;
-  }
-
-  .mobile-menu .lang-switch {
-    display: inline-block;
-    width: fit-content;
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    padding: 0.3rem 0.6rem;
-  }
-
-  /* Show/hide by breakpoint */
-  .mobile-only { display: none; }
-  .desktop-only { display: flex; }
-
-  @media (max-width: 768px) {
-    .mobile-only { display: flex; }
-    .desktop-only { display: none !important; }
-    .mobile-menu.is-open { display: flex; }
-  }
-
-  main {
-    padding-top: 3.5rem;
-  }
-
-  .footer {
-    border-top: 1px solid var(--color-border);
-    margin-top: 6rem;
-  }
-
-  .footer-inner {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.85rem;
-    color: var(--color-text-muted);
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-
-  .footer-links {
-    display: flex;
-    gap: 1.25rem;
-    flex-wrap: wrap;
-  }
-
-  .footer-links a {
-    color: var(--color-text-muted);
-    transition: color var(--transition);
-  }
-
-  .footer-links a:hover {
-    color: var(--color-accent);
-    opacity: 1;
-  }
 </style>

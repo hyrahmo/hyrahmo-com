@@ -1,6 +1,4 @@
 import type { APIRoute } from 'astro';
-import { readFileSync, existsSync } from 'node:fs';
-import { join } from 'node:path';
 
 // Serve sitemap-index.xml at /sitemap.xml for backwards compatibility
 export const GET: APIRoute = () => {
