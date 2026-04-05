@@ -1,16 +1,16 @@
 ---
-title: "国际象棋"
+title: "Chess"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "开局、战略、残局"
+description: "Openings, strategy, endgames"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/strategy/chess/index|English]]** · **[[ru/strategy/chess/index|Русский]]** · **[[es/strategy/chess/index|Español]]** · **[[de/strategy/chess/index|Deutsch]]** · **[[fr/strategy/chess/index|Français]]** · **[[pt/strategy/chess/index|Português]]** · **[[ar/strategy/chess/index|العربية]]**
+> **[[en/strategy/chess/index|EN]]** · **[[ru/strategy/chess/index|RU]]** · **[[es/strategy/chess/index|ES]]** · **[[de/strategy/chess/index|DE]]** · **[[fr/strategy/chess/index|FR]]** · **[[pt/strategy/chess/index|PT]]** · **[[ar/strategy/chess/index|AR]]**
 
-# 国际象棋
+# Chess
 
-开局、战略、残局.
+Openings, strategy, endgames.

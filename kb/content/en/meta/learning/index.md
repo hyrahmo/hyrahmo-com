@@ -1,7 +1,7 @@
 ---
 title: "Learning"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: en
 description: "Spaced repetition, Zettelkasten, methodology"
 tags: [en]
@@ -9,7 +9,7 @@ draft: false
 ---
 
 > [!note] 🌍
-> **[[ru/meta/learning/index|Русский]]** · **[[zh/meta/learning/index|中文]]** · **[[es/meta/learning/index|Español]]** · **[[de/meta/learning/index|Deutsch]]** · **[[fr/meta/learning/index|Français]]** · **[[pt/meta/learning/index|Português]]** · **[[ar/meta/learning/index|العربية]]**
+> **[[ru/meta/learning/index|RU]]** · **[[zh/meta/learning/index|ZH]]** · **[[es/meta/learning/index|ES]]** · **[[de/meta/learning/index|DE]]** · **[[fr/meta/learning/index|FR]]** · **[[pt/meta/learning/index|PT]]** · **[[ar/meta/learning/index|AR]]**
 
 # Learning
 

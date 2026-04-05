@@ -1,7 +1,7 @@
 ---
 title: "Биохакинг"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: ru
 description: "Сон, питание, нейрохимия"
 tags: [ru]
@@ -9,7 +9,7 @@ draft: false
 ---
 
 > [!note] 🌍
-> **[[en/meta/biohacking/index|English]]** · **[[zh/meta/biohacking/index|中文]]** · **[[es/meta/biohacking/index|Español]]** · **[[de/meta/biohacking/index|Deutsch]]** · **[[fr/meta/biohacking/index|Français]]** · **[[pt/meta/biohacking/index|Português]]** · **[[ar/meta/biohacking/index|العربية]]**
+> **[[en/meta/biohacking/index|EN]]** · **[[zh/meta/biohacking/index|ZH]]** · **[[es/meta/biohacking/index|ES]]** · **[[de/meta/biohacking/index|DE]]** · **[[fr/meta/biohacking/index|FR]]** · **[[pt/meta/biohacking/index|PT]]** · **[[ar/meta/biohacking/index|AR]]**
 
 # Биохакинг
 

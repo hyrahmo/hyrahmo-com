@@ -1,16 +1,16 @@
 ---
-title: "机器人"
+title: "Robotics"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "硬件、电子、机电一体化"
+description: "Hardware, electronics, mechatronics"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/engineering/robotics/index|English]]** · **[[ru/engineering/robotics/index|Русский]]** · **[[es/engineering/robotics/index|Español]]** · **[[de/engineering/robotics/index|Deutsch]]** · **[[fr/engineering/robotics/index|Français]]** · **[[pt/engineering/robotics/index|Português]]** · **[[ar/engineering/robotics/index|العربية]]**
+> **[[en/engineering/robotics/index|EN]]** · **[[ru/engineering/robotics/index|RU]]** · **[[es/engineering/robotics/index|ES]]** · **[[de/engineering/robotics/index|DE]]** · **[[fr/engineering/robotics/index|FR]]** · **[[pt/engineering/robotics/index|PT]]** · **[[ar/engineering/robotics/index|AR]]**
 
-# 机器人
+# Robotics
 
-硬件、电子、机电一体化.
+Hardware, electronics, mechatronics.

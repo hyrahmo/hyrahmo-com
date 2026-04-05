@@ -1,16 +1,16 @@
 ---
-title: "量化金融"
+title: "Quant"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "算法交易、高频交易、市场模型"
+description: "Algo trading, HFT, market models"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/finance/quant/index|English]]** · **[[ru/finance/quant/index|Русский]]** · **[[es/finance/quant/index|Español]]** · **[[de/finance/quant/index|Deutsch]]** · **[[fr/finance/quant/index|Français]]** · **[[pt/finance/quant/index|Português]]** · **[[ar/finance/quant/index|العربية]]**
+> **[[en/finance/quant/index|EN]]** · **[[ru/finance/quant/index|RU]]** · **[[es/finance/quant/index|ES]]** · **[[de/finance/quant/index|DE]]** · **[[fr/finance/quant/index|FR]]** · **[[pt/finance/quant/index|PT]]** · **[[ar/finance/quant/index|AR]]**
 
-# 量化金融
+# Quant
 
-算法交易、高频交易、市场模型.
+Algo trading, HFT, market models.

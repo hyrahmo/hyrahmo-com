@@ -1,16 +1,16 @@
 ---
-title: "Xadrez"
+title: "Chess"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: pt
-description: "Aberturas, estratégia, finais"
+description: "Openings, strategy, endgames"
 tags: [pt]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/strategy/chess/index|English]]** · **[[ru/strategy/chess/index|Русский]]** · **[[zh/strategy/chess/index|中文]]** · **[[es/strategy/chess/index|Español]]** · **[[de/strategy/chess/index|Deutsch]]** · **[[fr/strategy/chess/index|Français]]** · **[[ar/strategy/chess/index|العربية]]**
+> **[[en/strategy/chess/index|EN]]** · **[[ru/strategy/chess/index|RU]]** · **[[zh/strategy/chess/index|ZH]]** · **[[es/strategy/chess/index|ES]]** · **[[de/strategy/chess/index|DE]]** · **[[fr/strategy/chess/index|FR]]** · **[[ar/strategy/chess/index|AR]]**
 
-# Xadrez
+# Chess
 
-Aberturas, estratégia, finais.
+Openings, strategy, endgames.

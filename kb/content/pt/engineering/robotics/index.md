@@ -1,16 +1,16 @@
 ---
-title: "Robótica"
+title: "Robotics"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: pt
-description: "Hardware, eletrônica, mecatrônica"
+description: "Hardware, electronics, mechatronics"
 tags: [pt]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/engineering/robotics/index|English]]** · **[[ru/engineering/robotics/index|Русский]]** · **[[zh/engineering/robotics/index|中文]]** · **[[es/engineering/robotics/index|Español]]** · **[[de/engineering/robotics/index|Deutsch]]** · **[[fr/engineering/robotics/index|Français]]** · **[[ar/engineering/robotics/index|العربية]]**
+> **[[en/engineering/robotics/index|EN]]** · **[[ru/engineering/robotics/index|RU]]** · **[[zh/engineering/robotics/index|ZH]]** · **[[es/engineering/robotics/index|ES]]** · **[[de/engineering/robotics/index|DE]]** · **[[fr/engineering/robotics/index|FR]]** · **[[ar/engineering/robotics/index|AR]]**
 
-# Robótica
+# Robotics
 
-Hardware, eletrônica, mecatrônica.
+Hardware, electronics, mechatronics.

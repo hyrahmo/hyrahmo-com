@@ -1,16 +1,16 @@
 ---
 title: "CS2"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "战术、道具、经济"
+description: "Tactics, utility, economy"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/strategy/cs2/index|English]]** · **[[ru/strategy/cs2/index|Русский]]** · **[[es/strategy/cs2/index|Español]]** · **[[de/strategy/cs2/index|Deutsch]]** · **[[fr/strategy/cs2/index|Français]]** · **[[pt/strategy/cs2/index|Português]]** · **[[ar/strategy/cs2/index|العربية]]**
+> **[[en/strategy/cs2/index|EN]]** · **[[ru/strategy/cs2/index|RU]]** · **[[es/strategy/cs2/index|ES]]** · **[[de/strategy/cs2/index|DE]]** · **[[fr/strategy/cs2/index|FR]]** · **[[pt/strategy/cs2/index|PT]]** · **[[ar/strategy/cs2/index|AR]]**
 
 # CS2
 
-战术、道具、经济.
+Tactics, utility, economy.

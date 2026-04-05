@@ -1,16 +1,16 @@
 ---
-title: "Robotique"
+title: "Robotics"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: fr
-description: "Matériel, électronique, mécatronique"
+description: "Hardware, electronics, mechatronics"
 tags: [fr]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/engineering/robotics/index|English]]** · **[[ru/engineering/robotics/index|Русский]]** · **[[zh/engineering/robotics/index|中文]]** · **[[es/engineering/robotics/index|Español]]** · **[[de/engineering/robotics/index|Deutsch]]** · **[[pt/engineering/robotics/index|Português]]** · **[[ar/engineering/robotics/index|العربية]]**
+> **[[en/engineering/robotics/index|EN]]** · **[[ru/engineering/robotics/index|RU]]** · **[[zh/engineering/robotics/index|ZH]]** · **[[es/engineering/robotics/index|ES]]** · **[[de/engineering/robotics/index|DE]]** · **[[pt/engineering/robotics/index|PT]]** · **[[ar/engineering/robotics/index|AR]]**
 
-# Robotique
+# Robotics
 
-Matériel, électronique, mécatronique.
+Hardware, electronics, mechatronics.

@@ -1,16 +1,16 @@
 ---
-title: "软件工程"
+title: "Software"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "后端、系统、架构"
+description: "Backend, systems, architecture"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/engineering/software/index|English]]** · **[[ru/engineering/software/index|Русский]]** · **[[es/engineering/software/index|Español]]** · **[[de/engineering/software/index|Deutsch]]** · **[[fr/engineering/software/index|Français]]** · **[[pt/engineering/software/index|Português]]** · **[[ar/engineering/software/index|العربية]]**
+> **[[en/engineering/software/index|EN]]** · **[[ru/engineering/software/index|RU]]** · **[[es/engineering/software/index|ES]]** · **[[de/engineering/software/index|DE]]** · **[[fr/engineering/software/index|FR]]** · **[[pt/engineering/software/index|PT]]** · **[[ar/engineering/software/index|AR]]**
 
-# 软件工程
+# Software
 
-后端、系统、架构.
+Backend, systems, architecture.

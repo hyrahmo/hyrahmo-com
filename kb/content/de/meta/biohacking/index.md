@@ -1,16 +1,16 @@
 ---
 title: "Biohacking"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: de
-description: "Schlaf, Ernährung, Neurochemie"
+description: "Sleep, nutrition, neurochemistry"
 tags: [de]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/meta/biohacking/index|English]]** · **[[ru/meta/biohacking/index|Русский]]** · **[[zh/meta/biohacking/index|中文]]** · **[[es/meta/biohacking/index|Español]]** · **[[fr/meta/biohacking/index|Français]]** · **[[pt/meta/biohacking/index|Português]]** · **[[ar/meta/biohacking/index|العربية]]**
+> **[[en/meta/biohacking/index|EN]]** · **[[ru/meta/biohacking/index|RU]]** · **[[zh/meta/biohacking/index|ZH]]** · **[[es/meta/biohacking/index|ES]]** · **[[fr/meta/biohacking/index|FR]]** · **[[pt/meta/biohacking/index|PT]]** · **[[ar/meta/biohacking/index|AR]]**
 
 # Biohacking
 
-Schlaf, Ernährung, Neurochemie.
+Sleep, nutrition, neurochemistry.

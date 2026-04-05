@@ -1,16 +1,16 @@
 ---
 title: "Quant"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: es
-description: "Trading algorítmico, HFT, modelos de mercado"
+description: "Algo trading, HFT, market models"
 tags: [es]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/finance/quant/index|English]]** · **[[ru/finance/quant/index|Русский]]** · **[[zh/finance/quant/index|中文]]** · **[[de/finance/quant/index|Deutsch]]** · **[[fr/finance/quant/index|Français]]** · **[[pt/finance/quant/index|Português]]** · **[[ar/finance/quant/index|العربية]]**
+> **[[en/finance/quant/index|EN]]** · **[[ru/finance/quant/index|RU]]** · **[[zh/finance/quant/index|ZH]]** · **[[de/finance/quant/index|DE]]** · **[[fr/finance/quant/index|FR]]** · **[[pt/finance/quant/index|PT]]** · **[[ar/finance/quant/index|AR]]**
 
 # Quant
 
-Trading algorítmico, HFT, modelos de mercado.
+Algo trading, HFT, market models.

@@ -1,16 +1,16 @@
 ---
-title: "العملات المشفرة"
+title: "Crypto"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: ar
-description: "البلوكتشين، التمويل اللامركزي"
+description: "Blockchain, DeFi, tokenomics"
 tags: [ar]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/finance/crypto/index|English]]** · **[[ru/finance/crypto/index|Русский]]** · **[[zh/finance/crypto/index|中文]]** · **[[es/finance/crypto/index|Español]]** · **[[de/finance/crypto/index|Deutsch]]** · **[[fr/finance/crypto/index|Français]]** · **[[pt/finance/crypto/index|Português]]**
+> **[[en/finance/crypto/index|EN]]** · **[[ru/finance/crypto/index|RU]]** · **[[zh/finance/crypto/index|ZH]]** · **[[es/finance/crypto/index|ES]]** · **[[de/finance/crypto/index|DE]]** · **[[fr/finance/crypto/index|FR]]** · **[[pt/finance/crypto/index|PT]]**
 
-# العملات المشفرة
+# Crypto
 
-البلوكتشين، التمويل اللامركزي.
+Blockchain, DeFi, tokenomics.

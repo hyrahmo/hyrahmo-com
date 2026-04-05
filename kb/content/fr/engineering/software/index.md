@@ -1,16 +1,16 @@
 ---
-title: "Logiciel"
+title: "Software"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: fr
-description: "Backend, systèmes, architecture"
+description: "Backend, systems, architecture"
 tags: [fr]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/engineering/software/index|English]]** · **[[ru/engineering/software/index|Русский]]** · **[[zh/engineering/software/index|中文]]** · **[[es/engineering/software/index|Español]]** · **[[de/engineering/software/index|Deutsch]]** · **[[pt/engineering/software/index|Português]]** · **[[ar/engineering/software/index|العربية]]**
+> **[[en/engineering/software/index|EN]]** · **[[ru/engineering/software/index|RU]]** · **[[zh/engineering/software/index|ZH]]** · **[[es/engineering/software/index|ES]]** · **[[de/engineering/software/index|DE]]** · **[[pt/engineering/software/index|PT]]** · **[[ar/engineering/software/index|AR]]**
 
-# Logiciel
+# Software
 
-Backend, systèmes, architecture.
+Backend, systems, architecture.

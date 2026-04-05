@@ -1,16 +1,16 @@
 ---
-title: "人工智能"
+title: "AI"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "LLM、智能体、计算机视觉"
+description: "LLMs, agents, computer vision"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/engineering/ai/index|English]]** · **[[ru/engineering/ai/index|Русский]]** · **[[es/engineering/ai/index|Español]]** · **[[de/engineering/ai/index|Deutsch]]** · **[[fr/engineering/ai/index|Français]]** · **[[pt/engineering/ai/index|Português]]** · **[[ar/engineering/ai/index|العربية]]**
+> **[[en/engineering/ai/index|EN]]** · **[[ru/engineering/ai/index|RU]]** · **[[es/engineering/ai/index|ES]]** · **[[de/engineering/ai/index|DE]]** · **[[fr/engineering/ai/index|FR]]** · **[[pt/engineering/ai/index|PT]]** · **[[ar/engineering/ai/index|AR]]**
 
-# 人工智能
+# AI
 
-LLM、智能体、计算机视觉.
+LLMs, agents, computer vision.

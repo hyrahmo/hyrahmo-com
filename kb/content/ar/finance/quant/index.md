@@ -1,16 +1,16 @@
 ---
-title: "التمويل الكمي"
+title: "Quant"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: ar
-description: "التداول الخوارزمي، النماذج الكمية"
+description: "Algo trading, HFT, market models"
 tags: [ar]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/finance/quant/index|English]]** · **[[ru/finance/quant/index|Русский]]** · **[[zh/finance/quant/index|中文]]** · **[[es/finance/quant/index|Español]]** · **[[de/finance/quant/index|Deutsch]]** · **[[fr/finance/quant/index|Français]]** · **[[pt/finance/quant/index|Português]]**
+> **[[en/finance/quant/index|EN]]** · **[[ru/finance/quant/index|RU]]** · **[[zh/finance/quant/index|ZH]]** · **[[es/finance/quant/index|ES]]** · **[[de/finance/quant/index|DE]]** · **[[fr/finance/quant/index|FR]]** · **[[pt/finance/quant/index|PT]]**
 
-# التمويل الكمي
+# Quant
 
-التداول الخوارزمي، النماذج الكمية.
+Algo trading, HFT, market models.

@@ -1,16 +1,16 @@
 ---
-title: "الفيزياء"
+title: "Physics"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: ar
-description: "ميكانيكا الكم، الديناميكا الحرارية"
+description: "Quantum mechanics, thermodynamics"
 tags: [ar]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/science/physics/index|English]]** · **[[ru/science/physics/index|Русский]]** · **[[zh/science/physics/index|中文]]** · **[[es/science/physics/index|Español]]** · **[[de/science/physics/index|Deutsch]]** · **[[fr/science/physics/index|Français]]** · **[[pt/science/physics/index|Português]]**
+> **[[en/science/physics/index|EN]]** · **[[ru/science/physics/index|RU]]** · **[[zh/science/physics/index|ZH]]** · **[[es/science/physics/index|ES]]** · **[[de/science/physics/index|DE]]** · **[[fr/science/physics/index|FR]]** · **[[pt/science/physics/index|PT]]**
 
-# الفيزياء
+# Physics
 
-ميكانيكا الكم، الديناميكا الحرارية.
+Quantum mechanics, thermodynamics.

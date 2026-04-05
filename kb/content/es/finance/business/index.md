@@ -1,16 +1,16 @@
 ---
-title: "Negocios"
+title: "Business"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: es
-description: "Productos digitales, crecimiento, monetización"
+description: "Digital products, growth, monetization"
 tags: [es]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/finance/business/index|English]]** · **[[ru/finance/business/index|Русский]]** · **[[zh/finance/business/index|中文]]** · **[[de/finance/business/index|Deutsch]]** · **[[fr/finance/business/index|Français]]** · **[[pt/finance/business/index|Português]]** · **[[ar/finance/business/index|العربية]]**
+> **[[en/finance/business/index|EN]]** · **[[ru/finance/business/index|RU]]** · **[[zh/finance/business/index|ZH]]** · **[[de/finance/business/index|DE]]** · **[[fr/finance/business/index|FR]]** · **[[pt/finance/business/index|PT]]** · **[[ar/finance/business/index|AR]]**
 
-# Negocios
+# Business
 
-Productos digitales, crecimiento, monetización.
+Digital products, growth, monetization.

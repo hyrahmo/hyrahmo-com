@@ -1,16 +1,16 @@
 ---
-title: "扑克"
+title: "Poker"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "GTO、范围、风险管理"
+description: "GTO, ranges, risk management"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/strategy/poker/index|English]]** · **[[ru/strategy/poker/index|Русский]]** · **[[es/strategy/poker/index|Español]]** · **[[de/strategy/poker/index|Deutsch]]** · **[[fr/strategy/poker/index|Français]]** · **[[pt/strategy/poker/index|Português]]** · **[[ar/strategy/poker/index|العربية]]**
+> **[[en/strategy/poker/index|EN]]** · **[[ru/strategy/poker/index|RU]]** · **[[es/strategy/poker/index|ES]]** · **[[de/strategy/poker/index|DE]]** · **[[fr/strategy/poker/index|FR]]** · **[[pt/strategy/poker/index|PT]]** · **[[ar/strategy/poker/index|AR]]**
 
-# 扑克
+# Poker
 
-GTO、范围、风险管理.
+GTO, ranges, risk management.

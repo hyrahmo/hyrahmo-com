@@ -1,16 +1,16 @@
 ---
-title: "数学"
+title: "Math"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "线性代数、统计学、概率论"
+description: "Linear algebra, statistics, probability"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/science/math/index|English]]** · **[[ru/science/math/index|Русский]]** · **[[es/science/math/index|Español]]** · **[[de/science/math/index|Deutsch]]** · **[[fr/science/math/index|Français]]** · **[[pt/science/math/index|Português]]** · **[[ar/science/math/index|العربية]]**
+> **[[en/science/math/index|EN]]** · **[[ru/science/math/index|RU]]** · **[[es/science/math/index|ES]]** · **[[de/science/math/index|DE]]** · **[[fr/science/math/index|FR]]** · **[[pt/science/math/index|PT]]** · **[[ar/science/math/index|AR]]**
 
-# 数学
+# Math
 
-线性代数、统计学、概率论.
+Linear algebra, statistics, probability.

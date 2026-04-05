@@ -1,16 +1,16 @@
 ---
-title: "Physik"
+title: "Physics"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: de
-description: "Quantenmechanik, Thermodynamik"
+description: "Quantum mechanics, thermodynamics"
 tags: [de]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/science/physics/index|English]]** · **[[ru/science/physics/index|Русский]]** · **[[zh/science/physics/index|中文]]** · **[[es/science/physics/index|Español]]** · **[[fr/science/physics/index|Français]]** · **[[pt/science/physics/index|Português]]** · **[[ar/science/physics/index|العربية]]**
+> **[[en/science/physics/index|EN]]** · **[[ru/science/physics/index|RU]]** · **[[zh/science/physics/index|ZH]]** · **[[es/science/physics/index|ES]]** · **[[fr/science/physics/index|FR]]** · **[[pt/science/physics/index|PT]]** · **[[ar/science/physics/index|AR]]**
 
-# Physik
+# Physics
 
-Quantenmechanik, Thermodynamik.
+Quantum mechanics, thermodynamics.

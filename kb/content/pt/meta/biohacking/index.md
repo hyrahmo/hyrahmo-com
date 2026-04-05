@@ -1,16 +1,16 @@
 ---
 title: "Biohacking"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: pt
-description: "Sono, nutrição, neuroquímica"
+description: "Sleep, nutrition, neurochemistry"
 tags: [pt]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/meta/biohacking/index|English]]** · **[[ru/meta/biohacking/index|Русский]]** · **[[zh/meta/biohacking/index|中文]]** · **[[es/meta/biohacking/index|Español]]** · **[[de/meta/biohacking/index|Deutsch]]** · **[[fr/meta/biohacking/index|Français]]** · **[[ar/meta/biohacking/index|العربية]]**
+> **[[en/meta/biohacking/index|EN]]** · **[[ru/meta/biohacking/index|RU]]** · **[[zh/meta/biohacking/index|ZH]]** · **[[es/meta/biohacking/index|ES]]** · **[[de/meta/biohacking/index|DE]]** · **[[fr/meta/biohacking/index|FR]]** · **[[ar/meta/biohacking/index|AR]]**
 
 # Biohacking
 
-Sono, nutrição, neuroquímica.
+Sleep, nutrition, neurochemistry.

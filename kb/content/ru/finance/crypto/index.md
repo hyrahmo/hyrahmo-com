@@ -1,7 +1,7 @@
 ---
 title: "Крипто"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: ru
 description: "Блокчейн, DeFi, токеномика"
 tags: [ru]
@@ -9,7 +9,7 @@ draft: false
 ---
 
 > [!note] 🌍
-> **[[en/finance/crypto/index|English]]** · **[[zh/finance/crypto/index|中文]]** · **[[es/finance/crypto/index|Español]]** · **[[de/finance/crypto/index|Deutsch]]** · **[[fr/finance/crypto/index|Français]]** · **[[pt/finance/crypto/index|Português]]** · **[[ar/finance/crypto/index|العربية]]**
+> **[[en/finance/crypto/index|EN]]** · **[[zh/finance/crypto/index|ZH]]** · **[[es/finance/crypto/index|ES]]** · **[[de/finance/crypto/index|DE]]** · **[[fr/finance/crypto/index|FR]]** · **[[pt/finance/crypto/index|PT]]** · **[[ar/finance/crypto/index|AR]]**
 
 # Крипто
 

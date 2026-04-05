@@ -1,16 +1,16 @@
 ---
-title: "IA"
+title: "AI"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: es
-description: "LLMs, agentes, visión artificial"
+description: "LLMs, agents, computer vision"
 tags: [es]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/engineering/ai/index|English]]** · **[[ru/engineering/ai/index|Русский]]** · **[[zh/engineering/ai/index|中文]]** · **[[de/engineering/ai/index|Deutsch]]** · **[[fr/engineering/ai/index|Français]]** · **[[pt/engineering/ai/index|Português]]** · **[[ar/engineering/ai/index|العربية]]**
+> **[[en/engineering/ai/index|EN]]** · **[[ru/engineering/ai/index|RU]]** · **[[zh/engineering/ai/index|ZH]]** · **[[de/engineering/ai/index|DE]]** · **[[fr/engineering/ai/index|FR]]** · **[[pt/engineering/ai/index|PT]]** · **[[ar/engineering/ai/index|AR]]**
 
-# IA
+# AI
 
-LLMs, agentes, visión artificial.
+LLMs, agents, computer vision.

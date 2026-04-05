@@ -1,16 +1,16 @@
 ---
 title: "Poker"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: de
-description: "GTO, Ranges, Risikomanagement"
+description: "GTO, ranges, risk management"
 tags: [de]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/strategy/poker/index|English]]** · **[[ru/strategy/poker/index|Русский]]** · **[[zh/strategy/poker/index|中文]]** · **[[es/strategy/poker/index|Español]]** · **[[fr/strategy/poker/index|Français]]** · **[[pt/strategy/poker/index|Português]]** · **[[ar/strategy/poker/index|العربية]]**
+> **[[en/strategy/poker/index|EN]]** · **[[ru/strategy/poker/index|RU]]** · **[[zh/strategy/poker/index|ZH]]** · **[[es/strategy/poker/index|ES]]** · **[[fr/strategy/poker/index|FR]]** · **[[pt/strategy/poker/index|PT]]** · **[[ar/strategy/poker/index|AR]]**
 
 # Poker
 
-GTO, Ranges, Risikomanagement.
+GTO, ranges, risk management.

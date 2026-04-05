@@ -1,16 +1,16 @@
 ---
-title: "الروبوتات"
+title: "Robotics"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: ar
-description: "الأجهزة، الإلكترونيات، الميكاترونكس"
+description: "Hardware, electronics, mechatronics"
 tags: [ar]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/engineering/robotics/index|English]]** · **[[ru/engineering/robotics/index|Русский]]** · **[[zh/engineering/robotics/index|中文]]** · **[[es/engineering/robotics/index|Español]]** · **[[de/engineering/robotics/index|Deutsch]]** · **[[fr/engineering/robotics/index|Français]]** · **[[pt/engineering/robotics/index|Português]]**
+> **[[en/engineering/robotics/index|EN]]** · **[[ru/engineering/robotics/index|RU]]** · **[[zh/engineering/robotics/index|ZH]]** · **[[es/engineering/robotics/index|ES]]** · **[[de/engineering/robotics/index|DE]]** · **[[fr/engineering/robotics/index|FR]]** · **[[pt/engineering/robotics/index|PT]]**
 
-# الروبوتات
+# Robotics
 
-الأجهزة، الإلكترونيات، الميكاترونكس.
+Hardware, electronics, mechatronics.

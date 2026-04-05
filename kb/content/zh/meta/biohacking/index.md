@@ -1,16 +1,16 @@
 ---
-title: "生物黑客"
+title: "Biohacking"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "睡眠、营养、神经化学"
+description: "Sleep, nutrition, neurochemistry"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/meta/biohacking/index|English]]** · **[[ru/meta/biohacking/index|Русский]]** · **[[es/meta/biohacking/index|Español]]** · **[[de/meta/biohacking/index|Deutsch]]** · **[[fr/meta/biohacking/index|Français]]** · **[[pt/meta/biohacking/index|Português]]** · **[[ar/meta/biohacking/index|العربية]]**
+> **[[en/meta/biohacking/index|EN]]** · **[[ru/meta/biohacking/index|RU]]** · **[[es/meta/biohacking/index|ES]]** · **[[de/meta/biohacking/index|DE]]** · **[[fr/meta/biohacking/index|FR]]** · **[[pt/meta/biohacking/index|PT]]** · **[[ar/meta/biohacking/index|AR]]**
 
-# 生物黑客
+# Biohacking
 
-睡眠、营养、神经化学.
+Sleep, nutrition, neurochemistry.

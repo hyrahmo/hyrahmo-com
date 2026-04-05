@@ -1,16 +1,16 @@
 ---
-title: "التعلم"
+title: "Learning"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: ar
-description: "التكرار المتباعد، زتلكاستن، المنهجية"
+description: "Spaced repetition, Zettelkasten, methodology"
 tags: [ar]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/meta/learning/index|English]]** · **[[ru/meta/learning/index|Русский]]** · **[[zh/meta/learning/index|中文]]** · **[[es/meta/learning/index|Español]]** · **[[de/meta/learning/index|Deutsch]]** · **[[fr/meta/learning/index|Français]]** · **[[pt/meta/learning/index|Português]]**
+> **[[en/meta/learning/index|EN]]** · **[[ru/meta/learning/index|RU]]** · **[[zh/meta/learning/index|ZH]]** · **[[es/meta/learning/index|ES]]** · **[[de/meta/learning/index|DE]]** · **[[fr/meta/learning/index|FR]]** · **[[pt/meta/learning/index|PT]]**
 
-# التعلم
+# Learning
 
-التكرار المتباعد، زتلكاستن، المنهجية.
+Spaced repetition, Zettelkasten, methodology.

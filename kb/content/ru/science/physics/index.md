@@ -1,7 +1,7 @@
 ---
 title: "Физика"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: ru
 description: "Квантовая механика, термодинамика"
 tags: [ru]
@@ -9,7 +9,7 @@ draft: false
 ---
 
 > [!note] 🌍
-> **[[en/science/physics/index|English]]** · **[[zh/science/physics/index|中文]]** · **[[es/science/physics/index|Español]]** · **[[de/science/physics/index|Deutsch]]** · **[[fr/science/physics/index|Français]]** · **[[pt/science/physics/index|Português]]** · **[[ar/science/physics/index|العربية]]**
+> **[[en/science/physics/index|EN]]** · **[[zh/science/physics/index|ZH]]** · **[[es/science/physics/index|ES]]** · **[[de/science/physics/index|DE]]** · **[[fr/science/physics/index|FR]]** · **[[pt/science/physics/index|PT]]** · **[[ar/science/physics/index|AR]]**
 
 # Физика
 

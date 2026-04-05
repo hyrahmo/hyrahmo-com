@@ -1,16 +1,16 @@
 ---
-title: "学习方法"
+title: "Learning"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: zh
-description: "间隔重复、Zettelkasten、方法论"
+description: "Spaced repetition, Zettelkasten, methodology"
 tags: [zh]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/meta/learning/index|English]]** · **[[ru/meta/learning/index|Русский]]** · **[[es/meta/learning/index|Español]]** · **[[de/meta/learning/index|Deutsch]]** · **[[fr/meta/learning/index|Français]]** · **[[pt/meta/learning/index|Português]]** · **[[ar/meta/learning/index|العربية]]**
+> **[[en/meta/learning/index|EN]]** · **[[ru/meta/learning/index|RU]]** · **[[es/meta/learning/index|ES]]** · **[[de/meta/learning/index|DE]]** · **[[fr/meta/learning/index|FR]]** · **[[pt/meta/learning/index|PT]]** · **[[ar/meta/learning/index|AR]]**
 
-# 学习方法
+# Learning
 
-间隔重复、Zettelkasten、方法论.
+Spaced repetition, Zettelkasten, methodology.

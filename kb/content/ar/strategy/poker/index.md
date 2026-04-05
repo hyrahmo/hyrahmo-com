@@ -1,16 +1,16 @@
 ---
-title: "البوكر"
+title: "Poker"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: ar
-description: "نظرية اللعبة المثلى، إدارة المخاطر"
+description: "GTO, ranges, risk management"
 tags: [ar]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/strategy/poker/index|English]]** · **[[ru/strategy/poker/index|Русский]]** · **[[zh/strategy/poker/index|中文]]** · **[[es/strategy/poker/index|Español]]** · **[[de/strategy/poker/index|Deutsch]]** · **[[fr/strategy/poker/index|Français]]** · **[[pt/strategy/poker/index|Português]]**
+> **[[en/strategy/poker/index|EN]]** · **[[ru/strategy/poker/index|RU]]** · **[[zh/strategy/poker/index|ZH]]** · **[[es/strategy/poker/index|ES]]** · **[[de/strategy/poker/index|DE]]** · **[[fr/strategy/poker/index|FR]]** · **[[pt/strategy/poker/index|PT]]**
 
-# البوكر
+# Poker
 
-نظرية اللعبة المثلى، إدارة المخاطر.
+GTO, ranges, risk management.

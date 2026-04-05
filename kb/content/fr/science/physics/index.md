@@ -1,16 +1,16 @@
 ---
-title: "Physique"
+title: "Physics"
 date: 2025-12-21
-lastmod: 2026-04-04
+lastmod: 2026-04-05
 lang: fr
-description: "Mécanique quantique, thermodynamique"
+description: "Quantum mechanics, thermodynamics"
 tags: [fr]
 draft: false
 ---
 
 > [!note] 🌍
-> **[[en/science/physics/index|English]]** · **[[ru/science/physics/index|Русский]]** · **[[zh/science/physics/index|中文]]** · **[[es/science/physics/index|Español]]** · **[[de/science/physics/index|Deutsch]]** · **[[pt/science/physics/index|Português]]** · **[[ar/science/physics/index|العربية]]**
+> **[[en/science/physics/index|EN]]** · **[[ru/science/physics/index|RU]]** · **[[zh/science/physics/index|ZH]]** · **[[es/science/physics/index|ES]]** · **[[de/science/physics/index|DE]]** · **[[pt/science/physics/index|PT]]** · **[[ar/science/physics/index|AR]]**
 
-# Physique
+# Physics
 
-Mécanique quantique, thermodynamique.
+Quantum mechanics, thermodynamics.
