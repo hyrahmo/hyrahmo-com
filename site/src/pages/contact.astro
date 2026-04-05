@@ -1,23 +1,27 @@
 ---
 import Base from '../layouts/Base.astro';
-import { getSocials } from '../socials';
-const socials = getSocials('en');
+import SocialIcons from '../components/SocialIcons.astro';
 ---
 <Base title="Contact" description="Reach HYRAHMO via email, GitHub, X, Telegram, or LinkedIn. Open for collaboration and questions.">
   <section class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
     <h1 data-animate class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Contact</h1>
     <p data-animate data-animate-delay="100" class="text-[var(--color-text-secondary)] text-lg mb-8">Say hi, collaborate, or ask a question.</p>
-    <div class="space-y-2">
-      <a data-animate data-animate-delay="150" href="mailto:hello@hyrahmo.com" class="flex items-center gap-4 p-4 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl hover:border-[var(--color-text-muted)] transition-all hover:-translate-y-0.5">
-        <span class="font-mono text-xs text-[var(--color-text-muted)] w-20">Email</span>
-        <span class="text-[var(--color-accent)]">hello@hyrahmo.com</span>
-      </a>
-      {socials.map((s, i) => (
-        <a data-animate data-animate-delay={200 + i * 50} href={s.url} target="_blank" rel="noopener" class="flex items-center gap-4 p-4 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl hover:border-[var(--color-text-muted)] transition-all hover:-translate-y-0.5">
-          <span class="font-mono text-xs text-[var(--color-text-muted)] w-20">{s.label}</span>
-          <span class="text-[var(--color-accent)]">{s.handle}</span>
-        </a>
-      ))}
+
+    <div data-animate data-animate-delay="150" class="p-6 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl mb-6">
+      <a href="mailto:hello@hyrahmo.com" class="text-lg font-medium text-[var(--color-accent)] hover:opacity-80 transition-opacity">hello@hyrahmo.com</a>
+    </div>
+
+    <div data-animate data-animate-delay="200" class="space-y-4">
+      <h2 class="text-sm font-medium text-[var(--color-text-muted)] uppercase tracking-wider">Social</h2>
+      <SocialIcons lang="en" size={20} />
+    </div>
+
+    <div data-animate data-animate-delay="250" class="mt-8 space-y-4">
+      <h2 class="text-sm font-medium text-[var(--color-text-muted)] uppercase tracking-wider">Support</h2>
+      <div class="flex gap-3">
+        <a href="https://patreon.com/hyrahmo" target="_blank" rel="noopener" class="px-4 py-2 text-sm border border-[var(--color-border)] rounded-lg text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all">Patreon</a>
+        <a href="https://boosty.to/hyrahmo" target="_blank" rel="noopener" class="px-4 py-2 text-sm border border-[var(--color-border)] rounded-lg text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all">Boosty</a>
+      </div>
     </div>
   </section>
 </Base>

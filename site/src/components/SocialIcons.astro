@@ -1,0 +1,36 @@
+---
+interface Props {
+  lang?: string;
+  class?: string;
+  size?: number;
+}
+
+const { lang = 'en', class: cls = '', size = 18 } = Astro.props;
+const isRu = lang === 'ru';
+
+const socials = [
+  { label: 'GitHub', href: 'https://github.com/hyrahmo', icon: 'github' },
+  { label: 'X', href: isRu ? 'https://x.com/hyrahmoru' : 'https://x.com/hyrahmo', icon: 'x' },
+  { label: 'Telegram', href: isRu ? 'https://t.me/hyrahmoru' : 'https://t.me/hyrahmo', icon: 'telegram' },
+  { label: 'LinkedIn', href: 'https://linkedin.com/in/hyrahmo', icon: 'linkedin' },
+  { label: 'YouTube', href: isRu ? 'https://youtube.com/@hyrahmoru' : 'https://youtube.com/@hyrahmo', icon: 'youtube' },
+  { label: 'Discord', href: 'https://discord.gg/hyrahmo', icon: 'discord' },
+];
+
+const icons: Record<string, string> = {
+  github: `<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>`,
+  x: `<path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768M15.232 10.232L20 4"/>`,
+  telegram: `<path d="m22 2-7 20-4-9-9-4ZM22 2 11 13"/>`,
+  linkedin: `<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/>`,
+  youtube: `<path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/>`,
+  discord: `<path d="M18.93 5a19.62 19.62 0 0 0-4.86-1.51 14.48 14.48 0 0 0-.64 1.31 18.15 18.15 0 0 0-5.46 0A13.5 13.5 0 0 0 7.33 3.5 19.56 19.56 0 0 0 2.47 5 20.55 20.55 0 0 0 .06 17.47a19.8 19.8 0 0 0 6.03 3.05 14.6 14.6 0 0 0 1.28-2.09 12.78 12.78 0 0 1-2.02-.97l.49-.38a14 14 0 0 0 12.08 0l.49.38c-.64.38-1.32.7-2.02.97a14.6 14.6 0 0 0 1.28 2.09 19.76 19.76 0 0 0 6.03-3.05A20.5 20.5 0 0 0 21.13 5zM8.52 14.91a2.27 2.27 0 0 1-2.12-2.36 2.26 2.26 0 0 1 2.12-2.36 2.25 2.25 0 0 1 2.12 2.36 2.26 2.26 0 0 1-2.12 2.36zm6.56 0a2.27 2.27 0 0 1-2.12-2.36 2.26 2.26 0 0 1 2.12-2.36 2.25 2.25 0 0 1 2.12 2.36 2.26 2.26 0 0 1-2.12 2.36z"/>`,
+};
+---
+<div class={`flex items-center gap-3 ${cls}`}>
+  {socials.map(s => (
+    <a href={s.href} target="_blank" rel="noopener" aria-label={s.label} title={s.label}
+       class="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" set:html={icons[s.icon]} />
+    </a>
+  ))}
+</div>
