@@ -118,13 +118,26 @@ const nav = [
 
   <!-- Footer -->
   <footer class="border-t border-[var(--color-border)] mt-20">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-sm text-[var(--color-text-muted)]">
-      <span>&copy; {new Date().getFullYear()} {isRu ? 'Хирахмо' : 'HYRAHMO'}</span>
-      <div class="flex items-center gap-4">
-        <a href="https://github.com/hyrahmo" target="_blank" rel="noopener" class="hover:text-[var(--color-accent)] transition-colors">GitHub</a>
-        <a href={isRu ? 'https://x.com/hyrahmoru' : 'https://x.com/hyrahmo'} target="_blank" rel="noopener" class="hover:text-[var(--color-accent)] transition-colors">X</a>
-        <a href={isRu ? 'https://t.me/hyrahmoru' : 'https://t.me/hyrahmo'} target="_blank" rel="noopener" class="hover:text-[var(--color-accent)] transition-colors">Telegram</a>
-        <a href={isRu ? '/kb/ru/' : '/kb/'} class="hover:text-[var(--color-accent)] transition-colors">{isRu ? 'Заметки' : 'Notes'}</a>
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 space-y-4 text-sm text-[var(--color-text-muted)]">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+        <span>&copy; {new Date().getFullYear()} {isRu ? 'Хирахмо' : 'HYRAHMO'}</span>
+        <div class="flex items-center gap-4">
+          <a href="https://github.com/hyrahmo" target="_blank" rel="noopener" class="hover:text-[var(--color-accent)] transition-colors">GitHub</a>
+          <a href={isRu ? 'https://x.com/hyrahmoru' : 'https://x.com/hyrahmo'} target="_blank" rel="noopener" class="hover:text-[var(--color-accent)] transition-colors">X</a>
+          <a href={isRu ? 'https://t.me/hyrahmoru' : 'https://t.me/hyrahmo'} target="_blank" rel="noopener" class="hover:text-[var(--color-accent)] transition-colors">Telegram</a>
+          <a href={isRu ? '/kb/ru/' : '/kb/'} class="hover:text-[var(--color-accent)] transition-colors">{isRu ? 'Заметки' : 'Notes'}</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 text-xs text-[var(--color-text-muted)]">
+        <span class="opacity-50">{isRu ? 'Язык:' : 'Lang:'}</span>
+        <a href="/" class="hover:text-[var(--color-accent)] transition-colors">EN</a>
+        <a href="/ru/" class="hover:text-[var(--color-accent)] transition-colors">RU</a>
+        <a href="/kb/zh/" class="hover:text-[var(--color-accent)] transition-colors">中文</a>
+        <a href="/kb/es/" class="hover:text-[var(--color-accent)] transition-colors">ES</a>
+        <a href="/kb/de/" class="hover:text-[var(--color-accent)] transition-colors">DE</a>
+        <a href="/kb/fr/" class="hover:text-[var(--color-accent)] transition-colors">FR</a>
+        <a href="/kb/pt/" class="hover:text-[var(--color-accent)] transition-colors">PT</a>
+        <a href="/kb/ar/" class="hover:text-[var(--color-accent)] transition-colors">AR</a>
       </div>
     </div>
   </footer>
