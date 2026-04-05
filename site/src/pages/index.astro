@@ -1,10 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+import { projects } from '../data/projects';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft && data.lang === 'en'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+
+const topProjects = projects.slice(0, 2);
+
+const startDate = new Date('2026-04-06');
+const today = new Date();
+const dayNumber = Math.max(1, Math.floor((today.getTime() - startDate.getTime()) / 86400000) + 1);
 ---
 <Base title="Home" description="Builder, thinker, systems. Projects, open research, and a multilingual knowledge base.">
+  {/* Hero */}
   <section class="min-h-[85vh] flex items-center">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 py-20 sm:py-32">
-      <p data-animate class="font-mono text-sm text-[var(--color-text-muted)] mb-5">builder · thinker · systems</p>
+      <div data-animate class="flex items-center gap-3 mb-5">
+        <p class="font-mono text-sm text-[var(--color-text-muted)]">builder · thinker · systems</p>
+        <span class="font-mono text-xs text-[var(--color-text-muted)] opacity-50">day {dayNumber}</span>
+      </div>
       <h1 data-animate data-animate-delay="100" class="text-[clamp(2.5rem,7vw,4rem)] font-bold leading-[1.1] tracking-tight mb-5">
         I build things and<br class="hidden sm:block"/> share what I learn.
       </h1>
@@ -19,7 +35,8 @@ import Base from '../layouts/Base.astro';
     </div>
   </section>
 
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 pb-20">
+  {/* Cards */}
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
       {[
         { t: 'Build', d: 'Products and systems.' },
@@ -33,4 +50,46 @@ import Base from '../layouts/Base.astro';
       ))}
     </div>
   </section>
+
+  {/* Projects */}
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
+    <div class="flex items-baseline justify-between mb-5">
+      <h2 data-animate class="text-xl font-semibold tracking-tight">Projects</h2>
+      <a data-animate href="/projects" class="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">All →</a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      {topProjects.map((p, i) => (
+        <a href={`/projects/${p.id}/`} data-animate data-animate-delay={i * 80}
+           class="block p-5 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl hover:border-[var(--color-text-muted)] transition-all hover:-translate-y-0.5">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="w-2 h-2 rounded-full" style={`background:${p.color}`}></span>
+            <span class="font-semibold text-[var(--color-accent)]">{p.en.title}</span>
+            <span class="ml-auto font-mono text-xs text-[var(--color-text-muted)]">{p.en.tag}</span>
+          </div>
+          <p class="text-sm text-[var(--color-text-secondary)]">{p.en.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  {/* Posts */}
+  {posts.length > 0 && (
+    <section class="max-w-3xl mx-auto px-4 sm:px-6 pb-20">
+      <div class="flex items-baseline justify-between mb-5">
+        <h2 data-animate class="text-xl font-semibold tracking-tight">Posts</h2>
+        <a data-animate href="/blog" class="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">All →</a>
+      </div>
+      <div class="space-y-1">
+        {posts.map((post, i) => (
+          <a data-animate data-animate-delay={i * 60} href={`/blog/${post.id}/`}
+             class="flex items-baseline gap-4 py-3 border-b border-[var(--color-border)] last:border-b-0 hover:text-[var(--color-link)] transition-colors group">
+            <time class="font-mono text-xs text-[var(--color-text-muted)] shrink-0">
+              {post.data.pubDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+            </time>
+            <span class="group-hover:underline underline-offset-2">{post.data.title}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 </Base>

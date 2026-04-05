@@ -72,7 +72,8 @@
       "Bash(curl -s https://hyrahmo.com/)",
       "Bash(curl -s https://hyrahmo.com/kb/index.xml)",
       "Bash(git rm:*)",
-      "Bash(node scripts/rebuild-kb.mjs)"
+      "Bash(node scripts/rebuild-kb.mjs)",
+      "Bash(git revert:*)"
     ],
     "additionalDirectories": [
       "\\tmp"
