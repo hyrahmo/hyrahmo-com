@@ -17,9 +17,13 @@ const nav = [
   { href: `${prefix}/contact`, label: isRu ? 'Контакт' : 'Contact' },
 ];
 
+// For EN/RU: switch language on current page. For others: go to KB section.
+const enPath = isRu ? altPath : path;
+const ruPath = isRu ? path : altPath;
+
 const langs = [
-  { code: 'EN', href: '/', full: 'English' },
-  { code: 'RU', href: '/ru/', full: 'Русский' },
+  { code: 'EN', href: enPath, full: 'English' },
+  { code: 'RU', href: ruPath, full: 'Русский' },
   { sep: true },
   { code: '中文', href: '/kb/zh/', full: '中文' },
   { code: 'ES', href: '/kb/es/', full: 'Español' },
