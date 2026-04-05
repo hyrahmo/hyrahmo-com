@@ -1,0 +1,52 @@
+---
+interface Props {
+  lang?: string;
+}
+const { lang = 'en' } = Astro.props;
+const isRu = lang === 'ru';
+---
+<div class="flex flex-wrap items-center gap-3 my-6">
+  {/* Copy Link */}
+  <button id="copy-link" class="flex items-center gap-1.5 px-3 py-1.5 text-sm border border-[var(--color-border)] rounded-full text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all cursor-pointer">
+    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+    </svg>
+    <span class="copy-text">{isRu ? 'Копировать' : 'Copy Link'}</span>
+  </button>
+
+  {/* Support */}
+  <a href="https://boosty.to/hyrahmo" target="_blank" rel="noopener" class="flex items-center gap-1.5 px-3 py-1.5 text-sm border border-[var(--color-border)] rounded-full text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all">
+    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+    </svg>
+    {isRu ? 'Поддержать' : 'Support'}
+  </a>
+
+  {/* Share on X */}
+  <a href={`https://x.com/intent/tweet?url=${encodeURIComponent(Astro.url.href)}`} target="_blank" rel="noopener" class="flex items-center gap-1.5 px-3 py-1.5 text-sm border border-[var(--color-border)] rounded-full text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all">
+    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768M15.232 10.232L20 4"/>
+    </svg>
+    {isRu ? 'Поделиться' : 'Share'}
+  </a>
+</div>
+
+<script is:inline>
+document.getElementById('copy-link')?.addEventListener('click', async function() {
+  const btn = this;
+  const textEl = btn.querySelector('.copy-text');
+  const original = textEl.innerText;
+  try {
+    await navigator.clipboard.writeText(window.location.href);
+    textEl.innerText = btn.closest('[lang="ru"]') ? 'Скопировано!' : 'Copied!';
+    btn.style.borderColor = 'var(--color-link)';
+    btn.style.color = 'var(--color-link)';
+    setTimeout(() => {
+      textEl.innerText = original;
+      btn.style.borderColor = '';
+      btn.style.color = '';
+    }, 2000);
+  } catch(e) { console.error(e); }
+});
+</script>

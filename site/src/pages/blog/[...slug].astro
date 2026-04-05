@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import CopyLink from '../../components/CopyLink.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -41,7 +42,8 @@ const postUrl = new URL(`/blog/${post.id}/`, 'https://hyrahmo.com');
     <div data-animate data-animate-delay="100" class="prose max-w-none">
       <Content />
     </div>
-    <div class="mt-12 pt-6 border-t border-[var(--color-border)]">
+    <CopyLink lang={post.data.lang} />
+    <div class="mt-6 pt-6 border-t border-[var(--color-border)]">
       <a href="/blog" class="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">← All posts</a>
     </div>
   </article>

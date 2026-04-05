@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import CopyLink from '../../components/CopyLink.astro';
 import { projects } from '../../data/projects';
 
 export function getStaticPaths() {
@@ -43,7 +44,8 @@ const { project: p } = Astro.props;
       </div>
     )}
 
-    <div class="mt-10 pt-6 border-t border-[var(--color-border)] flex gap-4">
+    <CopyLink lang="en" />
+    <div class="mt-6 pt-6 border-t border-[var(--color-border)] flex gap-4">
       <a href="/projects" class="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">← All projects</a>
       <a href="/blog" class="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">Blog</a>
     </div>
