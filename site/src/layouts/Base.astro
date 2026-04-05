@@ -83,7 +83,23 @@ const nav = [
         {nav.map(n => (
           <a href={n.href} class="text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">{n.label}</a>
         ))}
-        <a href={altPath} class="font-mono text-xs px-2 py-0.5 border border-[var(--color-border)] rounded text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all">{isRu ? 'EN' : 'RU'}</a>
+        <div class="relative" id="lang-dropdown">
+          <button id="lang-btn" class="font-mono text-xs px-2 py-0.5 border border-[var(--color-border)] rounded text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all cursor-pointer flex items-center gap-1">
+            {isRu ? 'RU' : 'EN'}
+            <svg class="w-3 h-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div id="lang-menu" class="hidden absolute right-0 top-full mt-1 py-1 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg shadow-lg min-w-[100px] z-50">
+            <a href="/" class="block px-3 py-1.5 text-xs text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] hover:bg-[var(--color-surface-elevated)] transition-colors">English</a>
+            <a href="/ru/" class="block px-3 py-1.5 text-xs text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] hover:bg-[var(--color-surface-elevated)] transition-colors">Русский</a>
+            <div class="border-t border-[var(--color-border)] my-1"></div>
+            <a href="/kb/zh/" class="block px-3 py-1.5 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">中文</a>
+            <a href="/kb/es/" class="block px-3 py-1.5 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">Español</a>
+            <a href="/kb/de/" class="block px-3 py-1.5 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">Deutsch</a>
+            <a href="/kb/fr/" class="block px-3 py-1.5 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">Français</a>
+            <a href="/kb/pt/" class="block px-3 py-1.5 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">Português</a>
+            <a href="/kb/ar/" class="block px-3 py-1.5 text-xs text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">العربية</a>
+          </div>
+        </div>
         <button id="theme-desktop" aria-label="Toggle theme" class="p-1.5 border border-[var(--color-border)] rounded-lg text-[var(--color-text-muted)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all cursor-pointer">
           <svg class="w-4 h-4 dark-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
           <svg class="w-4 h-4 light-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -108,7 +124,16 @@ const nav = [
       {nav.map(n => (
         <a href={n.href} class="py-3 text-base text-[var(--color-text-secondary)] border-b border-[var(--color-border)] last:border-b-0 hover:text-[var(--color-accent)] transition-colors">{n.label}</a>
       ))}
-      <a href={altPath} class="mt-2 w-fit font-mono text-sm px-3 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">{isRu ? 'EN' : 'RU'}</a>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <a href="/" class="font-mono text-xs px-2 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">EN</a>
+        <a href="/ru/" class="font-mono text-xs px-2 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">RU</a>
+        <a href="/kb/zh/" class="font-mono text-xs px-2 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">中文</a>
+        <a href="/kb/es/" class="font-mono text-xs px-2 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">ES</a>
+        <a href="/kb/de/" class="font-mono text-xs px-2 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">DE</a>
+        <a href="/kb/fr/" class="font-mono text-xs px-2 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">FR</a>
+        <a href="/kb/pt/" class="font-mono text-xs px-2 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">PT</a>
+        <a href="/kb/ar/" class="font-mono text-xs px-2 py-1 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">AR</a>
+      </div>
     </div>
   </header>
 
@@ -159,6 +184,15 @@ const nav = [
     document.getElementById('theme-desktop')?.addEventListener('click', toggleTheme);
     document.getElementById('theme-mobile')?.addEventListener('click', toggleTheme);
     updateIcons();
+
+    // Language dropdown
+    const langBtn = document.getElementById('lang-btn');
+    const langMenu = document.getElementById('lang-menu');
+    langBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      langMenu.classList.toggle('hidden');
+    });
+    document.addEventListener('click', () => langMenu?.classList.add('hidden'));
 
     // Burger
     const burger = document.getElementById('burger');
