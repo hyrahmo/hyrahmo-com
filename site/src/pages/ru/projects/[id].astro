@@ -1,0 +1,49 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { projects } from '../../../data/projects';
+
+export function getStaticPaths() {
+  return projects.map(p => ({ params: { id: p.id }, props: { project: p } }));
+}
+
+const { project: p } = Astro.props;
+---
+<Base title={p.ru.title} lang="ru" description={p.ru.desc}>
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+    <div data-animate class="flex items-center gap-3 mb-6">
+      <span class="w-3 h-3 rounded-full" style={`background: ${p.color}`}></span>
+      <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">{p.ru.title}</h1>
+      <span class="font-mono text-xs px-2 py-0.5 border border-[var(--color-border)] rounded text-[var(--color-text-muted)]">{p.ru.tag}</span>
+    </div>
+
+    <p data-animate data-animate-delay="100" class="text-lg text-[var(--color-text-secondary)] leading-relaxed mb-8">{p.ru.body}</p>
+
+    {p.links.length > 0 && (
+      <div data-animate data-animate-delay="150" class="flex gap-3 mb-8">
+        {p.links.map(l => (
+          <a href={l.href} target="_blank" rel="noopener"
+             class="text-sm text-[var(--color-link)] hover:underline">{l.labelRu || l.label} ↗</a>
+        ))}
+      </div>
+    )}
+
+    {p.kbTopics.length > 0 && (
+      <div data-animate data-animate-delay="200">
+        <h2 class="text-lg font-semibold mb-3">Связанные заметки</h2>
+        <div class="space-y-2">
+          {p.kbTopics.map(t => (
+            <a href={t.hrefRu || t.href} class="flex items-center gap-3 p-3 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-lg hover:border-[var(--color-text-muted)] transition-all hover:-translate-y-0.5">
+              <span class="text-sm text-[var(--color-link)]">{t.labelRu || t.label}</span>
+              <span class="text-xs text-[var(--color-text-muted)]">→ База знаний</span>
+            </a>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="mt-10 pt-6 border-t border-[var(--color-border)] flex gap-4">
+      <a href="/ru/projects" class="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">← Все проекты</a>
+      <a href="/ru/blog" class="text-sm text-[var(--color-text-muted)] hover:text-[var(--color-accent)] transition-colors">Блог</a>
+    </div>
+  </section>
+</Base>

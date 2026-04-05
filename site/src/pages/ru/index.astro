@@ -27,8 +27,8 @@ import Base from '../../layouts/Base.astro';
         { t: 'Делюсь', d: 'Открытые заметки и связи.' },
       ].map((c, i) => (
         <div data-animate data-animate-delay={100 + i * 100} class="p-5 bg-[var(--color-surface)] border border-[var(--color-border)] rounded-xl hover:border-[var(--color-text-muted)] transition-all hover:-translate-y-1">
-          <h3 class="font-semibold mb-1">{c.t}</h3>
-          <p class="text-sm text-[var(--color-text-muted)]">{c.d}</p>
+          <h3 class="font-semibold mb-1 text-[var(--color-accent)]">{c.t}</h3>
+          <p class="text-sm text-[var(--color-text-secondary)]">{c.d}</p>
         </div>
       ))}
     </div>
