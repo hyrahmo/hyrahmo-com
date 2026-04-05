@@ -93,7 +93,7 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
       <div class="nav-links desktop-only">
         <a href={`${prefix}/about`}>{isRu ? 'Обо мне' : 'About'}</a>
         <a href={`${prefix}/projects`}>{isRu ? 'Проекты' : 'Projects'}</a>
-        <a href="/kb/">{isRu ? 'Заметки' : 'Notes'}</a>
+        <a href={isRu ? '/kb/ru/' : '/kb/'}>{isRu ? 'Заметки' : 'Notes'}</a>
         <a href={`${prefix}/contact`}>{isRu ? 'Контакт' : 'Contact'}</a>
         <a href={altPath} class="lang-switch">{isRu ? 'EN' : 'RU'}</a>
         <button class="theme-toggle" id="theme-toggle-desktop" aria-label="Toggle theme">
@@ -119,7 +119,7 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
     <div class="mobile-menu" id="mobile-menu">
       <a href={`${prefix}/about`}>{isRu ? 'Обо мне' : 'About'}</a>
       <a href={`${prefix}/projects`}>{isRu ? 'Проекты' : 'Projects'}</a>
-      <a href="/kb/">{isRu ? 'Заметки' : 'Notes'}</a>
+      <a href={isRu ? '/kb/ru/' : '/kb/'}>{isRu ? 'Заметки' : 'Notes'}</a>
       <a href={`${prefix}/contact`}>{isRu ? 'Контакт' : 'Contact'}</a>
       <a href={altPath} class="lang-switch">{isRu ? 'EN' : 'RU'}</a>
     </div>
@@ -136,7 +136,7 @@ const ogLocale = isRu ? 'ru_RU' : 'en_US';
         <a href="https://github.com/hyrahmo" target="_blank" rel="noopener">GitHub</a>
         <a href={isRu ? 'https://x.com/hyrahmoru' : 'https://x.com/hyrahmo'} target="_blank" rel="noopener">X</a>
         <a href={isRu ? 'https://t.me/hyrahmoru' : 'https://t.me/hyrahmo'} target="_blank" rel="noopener">Telegram</a>
-        <a href="/kb/">{isRu ? 'Заметки' : 'Notes'}</a>
+        <a href={isRu ? '/kb/ru/' : '/kb/'}>{isRu ? 'Заметки' : 'Notes'}</a>
       </div>
     </div>
   </footer>
