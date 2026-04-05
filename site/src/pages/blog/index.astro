@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('blog', ({ data }) => !data.draft))
+const posts = (await getCollection('blog', ({ data }) => !data.draft && data.lang === 'en'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 <Base title="Blog" description="Thoughts on building products, AI research, quantitative finance, and systems thinking. Written by HYRAHMO.">
