@@ -1,18 +1,30 @@
 ---
 import Base from '../../layouts/Base.astro';
+
+const langs = [
+  { code: 'en', label: 'English', href: '/' },
+  { code: 'ru', label: 'Русский', href: '/kb/ru/' },
+  { code: 'zh', label: '中文', href: '/kb/zh/' },
+  { code: 'es', label: 'Español', href: '/kb/es/' },
+  { code: 'de', label: 'Deutsch', href: '/kb/de/' },
+  { code: 'fr', label: 'Français', href: '/kb/fr/' },
+  { code: 'pt', label: 'Português', href: '/kb/pt/' },
+  { code: 'ar', label: 'العربية', href: '/kb/ar/' },
+];
 ---
-<Base title="Главная" lang="ru" description="HYRAHMO — строю, думаю, систематизирую.">
+<Base title="Хирахмо" lang="ru" description="Хирахмо — проекты, исследования и база знаний на 8 языках.">
   <section class="min-h-[80vh] flex items-center">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
       <p data-animate class="font-mono text-sm text-[var(--color-text-muted)] mb-4">строю · думаю · систематизирую</p>
       <h1 data-animate data-animate-delay="100" class="text-[clamp(2.5rem,7vw,4.5rem)] font-bold leading-[1.08] tracking-tight mb-6">
-        Я строю вещи<br/>и делюсь тем, что узнаю.
+        Строю и делюсь<br/>тем, что узнаю.
       </h1>
       <p data-animate data-animate-delay="200" class="text-lg text-[var(--color-text-secondary)] max-w-md mb-8">
         Проекты, заметки и идеи — в одном месте.
       </p>
       <div data-animate data-animate-delay="300" class="flex gap-3 flex-wrap">
         <a href="/ru/projects" class="px-5 py-2.5 bg-[var(--color-accent)] text-[var(--color-bg)] rounded-lg font-medium text-sm hover:opacity-90 transition-all hover:-translate-y-0.5">Проекты</a>
+        <a href="/ru/blog" class="px-5 py-2.5 border border-[var(--color-border)] rounded-lg text-sm font-medium text-[var(--color-text)] hover:border-[var(--color-text-muted)] transition-all hover:-translate-y-0.5">Блог</a>
         <a href="/kb/ru/" class="px-5 py-2.5 border border-[var(--color-border)] rounded-lg text-sm font-medium text-[var(--color-text)] hover:border-[var(--color-text-muted)] transition-all hover:-translate-y-0.5">Заметки →</a>
       </div>
     </div>
@@ -30,6 +42,16 @@ import Base from '../../layouts/Base.astro';
           <h3 class="font-semibold mb-1 text-[var(--color-accent)]">{c.t}</h3>
           <p class="text-sm text-[var(--color-text-secondary)]">{c.d}</p>
         </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto px-4 sm:px-6 pb-20">
+    <h2 data-animate class="text-2xl font-semibold tracking-tight mb-4">Языки</h2>
+    <p data-animate data-animate-delay="50" class="text-sm text-[var(--color-text-muted)] mb-4">Выбери язык для базы знаний.</p>
+    <div data-animate data-animate-delay="100" class="flex flex-wrap gap-2">
+      {langs.map(l => (
+        <a href={l.href} class="px-3 py-1.5 text-sm border border-[var(--color-border)] rounded-lg text-[var(--color-text-secondary)] hover:text-[var(--color-accent)] hover:border-[var(--color-text-muted)] transition-all">{l.label}</a>
       ))}
     </div>
   </section>
