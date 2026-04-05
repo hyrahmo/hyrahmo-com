@@ -70,7 +70,8 @@
       "Bash(pnpm add:*)",
       "Bash(npx tsc:*)",
       "Bash(curl -s https://hyrahmo.com/)",
-      "Bash(curl -s https://hyrahmo.com/kb/index.xml)"
+      "Bash(curl -s https://hyrahmo.com/kb/index.xml)",
+      "Bash(git rm:*)"
     ],
     "additionalDirectories": [
       "\\tmp"
