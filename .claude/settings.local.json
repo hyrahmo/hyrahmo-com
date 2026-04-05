@@ -68,7 +68,8 @@
       "Bash(ls -la jbmono*)",
       "Bash(find \"C:/Users/hyrahmo/Documents/hyrahmoru/src/content/projects\" -type f -name \"*.md\" -exec head -10 {} \\\\;)",
       "Bash(pnpm add:*)",
-      "Bash(npx tsc:*)"
+      "Bash(npx tsc:*)",
+      "Bash(curl -s https://hyrahmo.com/)"
     ],
     "additionalDirectories": [
       "\\tmp"
