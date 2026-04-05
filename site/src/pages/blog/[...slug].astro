@@ -9,8 +9,22 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const postUrl = new URL(`/blog/${post.id}/`, 'https://hyrahmo.com');
 ---
 <Base title={post.data.title} description={post.data.description} lang={post.data.lang}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.data.title,
+    "description": post.data.description,
+    "datePublished": post.data.pubDate.toISOString(),
+    "dateModified": (post.data.updatedDate || post.data.pubDate).toISOString(),
+    "url": postUrl.href,
+    "author": { "@type": "Person", "name": "HYRAHMO", "url": "https://hyrahmo.com" },
+    "publisher": { "@type": "Person", "name": "HYRAHMO", "url": "https://hyrahmo.com" },
+    "inLanguage": post.data.lang,
+    "keywords": post.data.tags.join(', '),
+  })} />
   <article class="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
     <header data-animate class="mb-10">
       <time class="font-mono text-xs text-[var(--color-text-muted)]">{post.data.pubDate.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</time>

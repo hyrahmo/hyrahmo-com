@@ -59,10 +59,36 @@ const nav = [
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "HYRAHMO",
+    "name": isRu ? "Хирахмо" : "HYRAHMO",
+    "alternateName": isRu ? "HYRAHMO" : "Хирахмо",
     "url": "https://hyrahmo.com",
-    "author": { "@type": "Person", "name": "HYRAHMO", "url": "https://hyrahmo.com" }
+    "description": desc,
+    "inLanguage": isRu ? "ru" : "en",
+    "author": {
+      "@type": "Person",
+      "name": "HYRAHMO",
+      "alternateName": "Хирахмо",
+      "url": "https://hyrahmo.com",
+      "sameAs": [
+        "https://github.com/hyrahmo",
+        "https://x.com/hyrahmo",
+        "https://t.me/hyrahmo",
+        "https://linkedin.com/in/hyrahmo"
+      ]
+    }
   })} />
+
+  {/* Breadcrumbs for non-home pages */}
+  {path !== '/' && path !== '/ru/' && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": isRu ? "Главная" : "Home", "item": `https://hyrahmo.com${prefix}/` },
+        { "@type": "ListItem", "position": 2, "name": title, "item": canonicalURL.href }
+      ]
+    })} />
+  )}
 
   <script is:inline>
     const t = localStorage.getItem('theme') || 'dark';
