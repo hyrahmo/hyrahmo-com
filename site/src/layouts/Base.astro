@@ -16,11 +16,11 @@ const defaultDesc = isRu
   : 'Hyrahmo — projects, research, and an open knowledge base.';
 const desc = description || defaultDesc;
 const brand = isRu ? 'Хирахмо' : 'Hyrahmo';
-const isHome = path === '/' || path === '/ru/';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogURL = new URL(ogImage, Astro.site);
 const path = Astro.url.pathname;
+const isHome = path === '/' || path === '/ru/';
 const altPath = isRu ? path.replace(/^\/ru/, '') || '/' : `/ru${path === '/' ? '' : path}`;
 const altURL = new URL(altPath, Astro.site);
 const prefix = isRu ? '/ru' : '';
