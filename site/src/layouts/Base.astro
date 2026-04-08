@@ -16,6 +16,7 @@ const defaultDesc = isRu
   : 'Hyrahmo — projects, research, and an open knowledge base.';
 const desc = description || defaultDesc;
 const brand = isRu ? 'Хирахмо' : 'Hyrahmo';
+const isHome = path === '/' || path === '/ru/';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogURL = new URL(ogImage, Astro.site);
@@ -40,7 +41,7 @@ const prefix = isRu ? '/ru' : '';
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonicalURL.href} />
-  <meta property="og:title" content={`${title} — ${brand}`} />
+  <meta property="og:title" content={isHome ? brand : `${title} — ${brand}`} />
   <meta property="og:description" content={desc} />
   <meta property="og:image" content={ogURL.href} />
   <meta property="og:image:width" content="1200" />
@@ -114,7 +115,7 @@ const prefix = isRu ? '/ru' : '';
     document.querySelector('meta[name="theme-color"]')?.setAttribute('content', t === 'dark' ? '#0a0a0a' : '#f5f5f4');
   </script>
 
-  <title>{title} — {brand}</title>
+  <title>{isHome ? brand : `${title} — ${brand}`}</title>
 </head>
 <body class="font-sans leading-relaxed">
   <Header lang={lang} />
