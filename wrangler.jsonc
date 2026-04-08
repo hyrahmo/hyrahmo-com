@@ -1,5 +1,6 @@
 {
   "name": "hyrahmo-com",
+  "main": "src/worker.ts",
   "compatibility_date": "2026-04-04",
   "assets": {
     "directory": "./dist",
