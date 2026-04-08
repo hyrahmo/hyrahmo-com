@@ -13,9 +13,9 @@ const { title, description, lang = 'en', ogImage = '/og.png' } = Astro.props;
 const isRu = lang === 'ru';
 const defaultDesc = isRu
   ? 'Хирахмо — проекты, исследования и открытая база знаний.'
-  : 'HYRAHMO — projects, research, and an open knowledge base.';
+  : 'Hyrahmo — projects, research, and an open knowledge base.';
 const desc = description || defaultDesc;
-const brand = isRu ? 'Хирахмо' : 'HYRAHMO';
+const brand = isRu ? 'Хирахмо' : 'Hyrahmo';
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogURL = new URL(ogImage, Astro.site);
@@ -30,7 +30,7 @@ const prefix = isRu ? '/ru' : '';
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content={desc} />
-  <meta name="author" content="HYRAHMO" />
+  <meta name="author" content="Hyrahmo" />
   <meta name="generator" content={Astro.generator} />
   <meta name="theme-color" content="#0a0a0a" />
 
@@ -57,13 +57,13 @@ const prefix = isRu ? '/ru' : '';
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": brand,
-    "alternateName": isRu ? "HYRAHMO" : "Хирахмо",
+    "alternateName": isRu ? "Hyrahmo" : "Хирахмо",
     "url": "https://hyrahmo.com",
     "description": desc,
     "inLanguage": isRu ? "ru" : "en",
     "author": {
       "@type": "Person",
-      "name": "HYRAHMO",
+      "name": "Hyrahmo",
       "alternateName": "Хирахмо",
       "url": "https://hyrahmo.com",
       "sameAs": [
@@ -74,7 +74,27 @@ const prefix = isRu ? '/ru' : '';
         "https://youtube.com/@hyrahmo",
         "https://patreon.com/hyrahmo"
       ]
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.google.com/search?q=site:hyrahmo.com+{search_term_string}",
+      "query-input": "required name=search_term_string"
     }
+  })} />
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "SiteNavigationElement",
+    "name": isRu
+      ? ["Главная", "Проекты", "Блог", "Заметки", "Контакт"]
+      : ["Home", "Projects", "Blog", "Notes", "Contact"],
+    "url": [
+      `https://hyrahmo.com${prefix}/`,
+      `https://hyrahmo.com${prefix}/projects`,
+      `https://hyrahmo.com${prefix}/blog`,
+      "https://hyrahmo.com/kb/",
+      `https://hyrahmo.com${prefix}/contact`
+    ]
   })} />
 
   {path !== '/' && path !== '/ru/' && (

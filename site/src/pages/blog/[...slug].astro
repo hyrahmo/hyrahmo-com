@@ -21,8 +21,8 @@ const postUrl = new URL(`/blog/${post.id}/`, 'https://hyrahmo.com');
     "datePublished": post.data.pubDate.toISOString(),
     "dateModified": (post.data.updatedDate || post.data.pubDate).toISOString(),
     "url": postUrl.href,
-    "author": { "@type": "Person", "name": "HYRAHMO", "url": "https://hyrahmo.com" },
-    "publisher": { "@type": "Person", "name": "HYRAHMO", "url": "https://hyrahmo.com" },
+    "author": { "@type": "Person", "name": "Hyrahmo", "url": "https://hyrahmo.com" },
+    "publisher": { "@type": "Person", "name": "Hyrahmo", "url": "https://hyrahmo.com" },
     "inLanguage": post.data.lang,
     "keywords": post.data.tags.join(', '),
   })} />

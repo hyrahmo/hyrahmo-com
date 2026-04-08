@@ -13,13 +13,13 @@ export const projects: Project[] = [
     id: 'hyrahmo',
     color: '#ffffff',
     en: {
-      title: 'HYRAHMO',
+      title: 'Hyrahmo',
       desc: 'Personal brand. YouTube, blog, build in public.',
       tag: 'Active',
       body: 'The main public identity. Essay-format content with voiceover, RU + EN. YouTube channel, blog, knowledge base — all connected. Living Application for Fall 2027.',
     },
     ru: {
-      title: 'HYRAHMO',
+      title: 'Hyrahmo',
       desc: 'Личный бренд. YouTube, блог, build in public.',
       tag: 'Активен',
       body: 'Главная публичная оболочка. Эссе-формат с закадровым голосом, RU + EN. YouTube, блог, база знаний — всё связано. Living Application для поступления Fall 2027.',

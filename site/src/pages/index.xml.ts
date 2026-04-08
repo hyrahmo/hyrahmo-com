@@ -5,9 +5,9 @@ export const GET: APIRoute = () => {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HYRAHMO</title>
+    <title>Hyrahmo</title>
     <link>https://hyrahmo.com</link>
-    <description>HYRAHMO — personal site and knowledge base</description>
+    <description>Hyrahmo — personal site and knowledge base</description>
     <atom:link href="https://hyrahmo.com/kb/index.xml" rel="alternate" type="application/rss+xml" title="Notes RSS"/>
     <item>
       <title>Notes (Knowledge Base)</title>
